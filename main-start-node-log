@@ -1,0 +1,1383 @@
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+*************************************************************************************************************
+stopping docker instances from ./dockercompose/docker-compose-nsd.ru.yaml
+*************************************************************************************************************
+*************************************************************************************************************
+stopping docker instances from ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+b38d4ef3f3a9
+29d7f703d55b
+Removing docker images: 82b6cb15c5d7
+c2368b86d33c
+Untagged: dev-peer0.nsd.nsd.ru-security-2.0-fa1f8bb90d80ff25d9c5363b380cb0d014dd766d2eec73aa2c9ccbcf2d8ec224:latest
+Deleted: sha256:82b6cb15c5d74774508f3caeaace332ec8f8bcb105fa284237bb3ae592078a87
+Deleted: sha256:2455e84724713c9b9c52a378154d4feac118fefc607f623b2240c216fbedfdc1
+Deleted: sha256:f295ae112ef6d15e7382c711187f7df637369df9d1cdb90993d15e814a22d24d
+Deleted: sha256:fc7b44013d5a135e7b884ef39cc080ee6afc26722ec8288564268239925a4d14
+Untagged: dev-peer0.nsd.nsd.ru-book-2.0-d266fcaf9975b2be1b42cf4ea36586ee6c11bfc86c090ac266b25e59ef9917a8:latest
+Deleted: sha256:c2368b86d33cc9c4cb58c1acdd63ab0f536f9c74132a36c237ea743b0b036ec0
+Deleted: sha256:d8989c9ac5d01ebcaeb8b7caead85b3e55f6cb3c9736f938586cd920baf432fb
+Deleted: sha256:b19b8ca42a60ad1c8fa71d577941d605aaf773a50f3ab0eb07bee013c8f73fad
+Deleted: sha256:26e707812dad6cc9e8499b6f621bdd8e19f9a9bb389360663cae314b21b01350
+*************************************************************************************************************
+Finished in 26 seconds
+*************************************************************************************************************
+dockercompose_orderer.nsd.ru
+dockercompose_peer0.nsd.nsd.ru
+dockercompose_peer1.nsd.nsd.ru
+Deleted Volumes:
+2791f50d6026a3177cceff6f88c63fef43315284f87832b0b7d9ec4b5ac4a277
+281448ab0369a823a49259f6928227322def26aad104d3824343b7bb6b933ed8
+b6b4d612955bdc75e36491e55b399c3d781366c22ff97ae63178cb819873202e
+bce649454dce58db5dddceb1162368dcfd2e026ce3678c579a343b23984f2feb
+f37040ee184c7616b8bcd39ffe9e0ec67aeb9c408e29969265f9a8c97d26749e
+77a9d71fc3b6dbf77ac3acac06d04ec0005f1fbaaaf36d20dfb54326614284e8
+e33dd35f13775ff4f5d16ffea7d38a4fbd9a50323e6b4e414826cee2f6993d78
+5335bff579cf10288a3cc89e9986978672ea8b9d3ac726f3378629e467da89e0
+37559976a55f94f76ad609614c9dc6a00eadca17f24bb1627f4dafb9c1cb44e0
+29efefcb06dfcf84ae32d84499b754230d15c6ae7a9d1e709981feb34fb78285
+e3ef62e5d1bc5b571af13179086b3b92438b87f38b2249fd8315ab93dd17c741
+da4822d5379a0417a2765b8bdbaac8575f3d3bb5507472e339a8b1970a0a8393
+73094fffd87f1f10a4cb0382551adbfd471d771f0f144b5d5b1477ba206e113e
+297fff90353dfcf7eefa60a1c1de8f5187278e5e7a692d78db528eb37b0b7a50
+b0dfb83e34c83eec8d1ce5f7edd1da5cdce1320f7e47d9e8d13444a41557b8b1
+8b39552e7fb255c0d699d802205f18f4ff5a063cd48948264c91cfedfd089077
+b08d4bf6ec22e5cdc792822b65bc8631de3fd597a577aa48d3db5357b3b7bfd3
+17c075edfb7b1c300f5fd386f943e82b0d34ec2a86d5af7afb7960ef664bc8b6
+e48857fe740af9cfc9a8eedf575705724f69805bf61c543596bb5f3348038fab
+60f5e0164b92a5272454e10152631edb994ce7ca286b9da8ea7bc89eb2468603
+3ec023a8fe9f448843fb81e3f599d1587cf9c46e0a5d05e475a72534495791d3
+84482f68c53e22ea0f32014006d599e9945606fac648e0243888d359f6763786
+1a066786dd0019bed39dd83f74b3c783cfd75c7fd2afd3718db1f445ef638f65
+b2f2da0ed93740fd6a85e18031fd614342366cafe05f12c87e877d7a9028dc32
+173e68ef3883e52e6e6d3157f4ba58626e3321ee795ebae82831678c8120bdbd
+bd06b3158518312c198f94c8314ff263776f71c7408d1a0daa9fe0572b4b69cc
+0cba8abc9a29f05ed390552fa1c806c5165b5f42b8c646b459949a524f5da1f8
+e9ab151f7f2d463a4316ab353573923dc5d0f8662d90dfdad0ba938f2361736e
+
+Total reclaimed space: 1.627MB
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+Removing old artifacts
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Removing generated and downloaded artifacts from: ./dockercompose, ./artifacts
+*************************************************************************************************************
+Finished in 0 seconds
+*************************************************************************************************************
+THIS_ORG: nsd
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Creating peer yaml files with nsd.ru, nsd, 4000, 8081, 7054, 7051, 7053, 7056, 7058
+Generating crypto material with cryptogen
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cliNoCryptoVolume.nsd.nsd.ru" bash -c "cryptogen generate --config=cryptogen-nsd.yaml"
+nsd.nsd.ru
+Changing artifacts ownership
+Adding generated CA private keys filenames to ./dockercompose/docker-compose-nsd.yaml
+Generating nsdConfig.json
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cliNoCryptoVolume.nsd.nsd.ru" bash -c "FABRIC_CFG_PATH=./ configtxgen  -printOrg nsdMSP > nsdConfig.json"
+2018-10-04 11:51:39.793 UTC [common/tools/configtxgen] main -> INFO 001[0m Loading configuration
+Copying generated TLS cert files from ./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru/peers/peer0.nsd.nsd.ru/tls to be served by www.nsd.nsd.ru
+cp -r ./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru/peers/peer0.nsd.nsd.ru/tls/ca.crt www/./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru/peers/peer0.nsd.nsd.ru/tls
+Copying generated TLS cert files from ./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru to be served by www.nsd.nsd.ru
+cp -r ./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru/msp www/./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru
+Copying generated nsdConfig.json files from ./artifacts to be served by www.nsd.nsd.ru
+cp -r ./artifacts/nsdConfig.json www/./artifacts
+*************************************************************************************************************
+Finished in 8 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Creating orderer docker compose yaml file with nsd.ru, nsd, sberbank, mts, 7050, 8080
+Creating orderer yaml files with nsd.ru, nsd, sberbank, mts, 7050, 8080
+Generating network-config.json for nsd, nsd
+Generating channel config transaction for common
+2018-10-04 11:51:42.467 UTC [common/tools/configtxgen] main -> INFO 001[0m Loading configuration
+2018-10-04 11:51:42.496 UTC [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 002[0m Generating new channel configtx
+2018-10-04 11:51:42.536 UTC [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 003[0m Writing new channel tx
+Generating crypto material with cryptogen
+docker-compose --file ./dockercompose/docker-compose-nsd.ru.yaml run --rm "cli.nsd.ru" bash -c "sleep 2 && cryptogen generate --config=cryptogen-nsd.ru.yaml"
+Generating orderer genesis block with configtxgen
+2018-10-04 11:51:47.521 UTC [common/tools/configtxgen] main -> INFO 001[0m Loading configuration
+2018-10-04 11:51:47.550 UTC [common/tools/configtxgen] doOutputBlock -> INFO 002[0m Generating genesis block
+2018-10-04 11:51:47.552 UTC [common/tools/configtxgen] doOutputBlock -> INFO 003[0m Writing genesis block
+Changing artifacts file ownership
+*************************************************************************************************************
+Finished in 8 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+*************************************************************************************************************
+starting docker instances from ./dockercompose/docker-compose-nsd.ru.yaml
+*************************************************************************************************************
+Found orphan containers (www.nsd.nsd.ru) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Creating cli.nsd.ru
+Creating www.nsd.ru
+Creating orderer.nsd.ru
+Copying generated orderer TLS cert files from ./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls to be served by www..nsd.ru
+cp -r ./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls/ca.crt www/./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls
+Copying generated orderer MSP cert files from ./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/msp/tlscacerts to be served by www..nsd.ru
+cp -r ./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/msp/tlscacerts/tlsca.nsd.ru-cert.pem www/./artifacts/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/msp/tlscacerts
+Copying channel transaction config files from ./artifacts/channel to be served by www..nsd.ru
+cp -r ./artifacts/channel/*.tx www/./artifacts/channel
+Copying generated network config files from ./artifacts to be served by www..nsd.ru
+cp -r ./artifacts/network-config.json www/./artifacts
+*************************************************************************************************************
+Finished in 2 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+mkdir -p ./artifacts/crypto-config/peerOrganizations/nsd.nsd.ru/peers/peer0.nsd.nsd.ru/tls
+mkdir -p ./artifacts/crypto-config/peerOrganizations/sberbank.nsd.ru/peers/peer0.sberbank.nsd.ru/tls
+mkdir -p ./artifacts/crypto-config/peerOrganizations/mts.nsd.ru/peers/peer0.mts.nsd.ru/tls
+*************************************************************************************************************
+downloading all channel config transaction files using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+*************************************************************************************************************
+downloading network config file using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+wget --verbose -N http://www.nsd.nsd.ru:8080/network-config.json && chown -R 0:0 .
+--2018-10-04 11:51:52--  http://www.nsd.nsd.ru:8080/network-config.json
+Resolving www.nsd.nsd.ru (www.nsd.nsd.ru)... 172.17.0.2
+Connecting to www.nsd.nsd.ru (www.nsd.nsd.ru)|172.17.0.2|:8080... failed: Connection refused.
+*************************************************************************************************************
+downloading orderer cert file using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+wget --verbose -N --directory-prefix crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls http://www.nsd.ru:8080/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls/ca.crt
+--2018-10-04 11:51:53--  http://www.nsd.ru:8080/crypto-config/ordererOrganizations/nsd.ru/orderers/orderer.nsd.ru/tls/ca.crt
+Resolving www.nsd.ru (www.nsd.ru)... 172.17.0.4
+Connecting to www.nsd.ru (www.nsd.ru)|172.17.0.4|:8080... failed: Connection refused.
+*************************************************************************************************************
+downloading member cert files using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+for ORG in nsd sberbank mts; do wget --verbose -N --directory-prefix crypto-config/peerOrganizations/${ORG}.nsd.ru/peers/peer0.${ORG}.nsd.ru/tls http://www.${ORG}.nsd.ru:8080/crypto-config/peerOrganizations/${ORG}.nsd.ru/peers/peer0.${ORG}.nsd.ru/tls/ca.crt; done
+--2018-10-04 11:51:55--  http://www.nsd.nsd.ru:8080/crypto-config/peerOrganizations/nsd.nsd.ru/peers/peer0.nsd.nsd.ru/tls/ca.crt
+Resolving www.nsd.nsd.ru (www.nsd.nsd.ru)... 172.17.0.2
+Connecting to www.nsd.nsd.ru (www.nsd.nsd.ru)|172.17.0.2|:8080... failed: Connection refused.
+--2018-10-04 11:51:55--  http://www.sberbank.nsd.ru:8080/crypto-config/peerOrganizations/sberbank.nsd.ru/peers/peer0.sberbank.nsd.ru/tls/ca.crt
+Resolving www.sberbank.nsd.ru (www.sberbank.nsd.ru)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address 'www.sberbank.nsd.ru'
+--2018-10-04 11:52:15--  http://www.mts.nsd.ru:8080/crypto-config/peerOrganizations/mts.nsd.ru/peers/peer0.mts.nsd.ru/tls/ca.crt
+Resolving www.mts.nsd.ru (www.mts.nsd.ru)... failed: Temporary failure in name resolution.
+wget: unable to resolve host address 'www.mts.nsd.ru'
+*************************************************************************************************************
+starting docker instances from ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+Found orphan containers (orderer.nsd.ru, www.nsd.ru) for this project. If you removed or renamed this service in your compose file, you can run this command with the --remove-orphans flag to clean it up.
+Recreating cli.nsd.ru
+www.nsd.nsd.ru is up-to-date
+Creating cliNoCryptoVolume.nsd.nsd.ru
+Creating cli.nsd.nsd.ru
+Creating ca.nsd.nsd.ru
+Creating peer1.nsd.nsd.ru
+Creating peer0.nsd.nsd.ru
+Creating api.nsd.nsd.ru
+*************************************************************************************************************
+creating channel common by nsd using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "peer channel create -o orderer.nsd.ru:7050 -c common -f /etc/hyperledger/artifacts/channel/common.tx --tls --cafile /etc/hyperledger/crypto/orderer/tls/ca.crt"
+[36m2018-10-04 11:52:43.394 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.395 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:52:43.402 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:52:43.403 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.404 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.404 UTC [msp] GetLocalMSP -> DEBU 006[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.404 UTC [msp] GetDefaultSigningIdentity -> DEBU 007[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.404 UTC [msp/identity] Sign -> DEBU 008[0m Sign: plaintext: 0A84060A066E73644D535012F9052D2D...53616D706C65436F6E736F727469756D 
+[36m2018-10-04 11:52:43.404 UTC [msp/identity] Sign -> DEBU 009[0m Sign: digest: 3C2952AB4B70208C832502F184A03A6A6D183B4576F115134275650148DB72FD 
+[36m2018-10-04 11:52:43.405 UTC [msp] GetLocalMSP -> DEBU 00a[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.405 UTC [msp] GetDefaultSigningIdentity -> DEBU 00b[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.406 UTC [msp] GetLocalMSP -> DEBU 00c[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.406 UTC [msp] GetDefaultSigningIdentity -> DEBU 00d[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.406 UTC [msp/identity] Sign -> DEBU 00e[0m Sign: plaintext: 0AB8060A1208021A06088BFED7DD0522...6653189E92AF9CEB624EEF93F183FA74 
+[36m2018-10-04 11:52:43.406 UTC [msp/identity] Sign -> DEBU 00f[0m Sign: digest: 939B60FC1A2A4B5DCB266AC5A8A625E80559A47C5A13405F4BC6EC42D099F286 
+[36m2018-10-04 11:52:43.470 UTC [msp] GetLocalMSP -> DEBU 010[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.470 UTC [msp] GetDefaultSigningIdentity -> DEBU 011[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.471 UTC [msp] GetLocalMSP -> DEBU 012[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.471 UTC [msp] GetDefaultSigningIdentity -> DEBU 013[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.472 UTC [msp/identity] Sign -> DEBU 014[0m Sign: plaintext: 0AB8060A1208021A06088BFED7DD0522...54BED04BBAC012080A021A0012021A00 
+[36m2018-10-04 11:52:43.472 UTC [msp/identity] Sign -> DEBU 015[0m Sign: digest: 1E3BEED7C4BB2ADB96D9451F26C776F32589905CECC75CEAAE79F0BBC4F500B7 
+[36m2018-10-04 11:52:43.474 UTC [channelCmd] readBlock -> DEBU 016[0m Got status: &{NOT_FOUND}
+[36m2018-10-04 11:52:43.475 UTC [msp] GetLocalMSP -> DEBU 017[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.478 UTC [msp] GetDefaultSigningIdentity -> DEBU 018[0m Obtaining default signing identity
+2018-10-04 11:52:43.484 UTC [channelCmd] InitCmdFactory -> INFO 019[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:52:43.684 UTC [msp] GetLocalMSP -> DEBU 01a[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.684 UTC [msp] GetDefaultSigningIdentity -> DEBU 01b[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.684 UTC [msp] GetLocalMSP -> DEBU 01c[0m Returning existing local MSP
+[36m2018-10-04 11:52:43.684 UTC [msp] GetDefaultSigningIdentity -> DEBU 01d[0m Obtaining default signing identity
+[36m2018-10-04 11:52:43.684 UTC [msp/identity] Sign -> DEBU 01e[0m Sign: plaintext: 0AB8060A1208021A06088BFED7DD0522...29B5C470843C12080A021A0012021A00 
+[36m2018-10-04 11:52:43.685 UTC [msp/identity] Sign -> DEBU 01f[0m Sign: digest: 9B8E09601112015791E0A97E9830F2795ADEA2183AA84C9CD3810ED984AA7457 
+[36m2018-10-04 11:52:43.687 UTC [channelCmd] readBlock -> DEBU 020[0m Received block: 0
+2018-10-04 11:52:43.688 UTC [main] main -> INFO 021[0m Exiting.....
+changing ownership of channel block files
+copying channel block file from ./artifacts to be served by www.nsd.nsd.ru
+*************************************************************************************************************
+joining channel common by all peers of nsd using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+[36m2018-10-04 11:52:46.762 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:52:46.762 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:52:46.770 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:52:46.771 UTC [msp/identity] Sign -> DEBU 004[0m Sign: plaintext: 0A82070A5C08011A0C088EFED7DD0510...8F98F724378D1A080A000A000A000A00 
+[36m2018-10-04 11:52:46.771 UTC [msp/identity] Sign -> DEBU 005[0m Sign: digest: 298A1309213744D159F2B9D308D00678328F308D0812E69A3764F446A24DE769 
+2018-10-04 11:52:46.886 UTC [channelCmd] executeJoin -> INFO 006[0m Successfully submitted proposal to join channel
+2018-10-04 11:52:46.886 UTC [main] main -> INFO 007[0m Exiting.....
+[36m2018-10-04 11:52:48.729 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:52:48.729 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:52:48.736 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:52:48.738 UTC [msp/identity] Sign -> DEBU 004[0m Sign: plaintext: 0A82070A5C08011A0C0890FED7DD0510...8F98F724378D1A080A000A000A000A00 
+[36m2018-10-04 11:52:48.738 UTC [msp/identity] Sign -> DEBU 005[0m Sign: digest: 891F85A47C33C6C906938AF2C13E5B67673C1E468178839F7C99AC3D35A00AB9 
+2018-10-04 11:52:48.843 UTC [channelCmd] executeJoin -> INFO 006[0m Successfully submitted proposal to join channel
+2018-10-04 11:52:48.843 UTC [main] main -> INFO 007[0m Exiting.....
+*************************************************************************************************************
+Finished in 58 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+*************************************************************************************************************
+ >> configReplacementScript: '.[0] * {"channel_group":{"groups":{"Application":{"mod_policy": "nsdOnly", "policies":.[1]}}}}' config.json new_policy.json ...
+*************************************************************************************************************
+*************************************************************************************************************
+nsd is starting configtxlator on cli.nsd.nsd.ru by configtxlator start & 
+*************************************************************************************************************
+waiting 3s for configtxlator to start...
+curl -X POST --data-binary @config_block.pb http://172.17.0.7:7059/protolator/decode/common.Block | jq . > config_block.json && jq .data.data[0].payload.data.config config_block.json > config.json
+curl -X POST --data-binary @config.json http://172.17.0.7:7059/protolator/encode/common.Config > config.pb && curl -X POST --data-binary @updated_config.json http://172.17.0.7:7059/protolator/encode/common.Config > updated_config.pb && curl -X POST -F channel=common -F 'original=@config.pb' -F 'updated=@updated_config.pb' http://172.17.0.7:7059/configtxlator/compute/update-from-configs > update.pb && curl -X POST --data-binary @update.pb http://172.17.0.7:7059/protolator/decode/common.ConfigUpdate | jq . > update.json && echo '{"payload":{"header":{"channel_header":{"channel_id":"common","type":2}},"data":{"config_update":'`cat update.json`'}}}' | jq . > update_in_envelope.json && curl -X POST --data-binary @update_in_envelope.json http://172.17.0.7:7059/protolator/encode/common.Envelope > update_in_envelope.pb && echo 'Finished update_in_envelope.pb preparation!' && pkill configtxlator
+Finished update_in_envelope.pb preparation!
+*************************************************************************************************************
+nsd is starting configtxlator on cli.nsd.nsd.ru by configtxlator start & 
+*************************************************************************************************************
+waiting 3s for configtxlator to start...
+*************************************************************************************************************
+ >> nsd is sending channel update update_in_envelope.pb with cli.nsd.nsd.ru by peer channel update -f update_in_envelope.pb -c common -o orderer.nsd.ru:7050 --tls --cafile /etc/hyperledger/crypto/orderer/tls/ca.crt
+*************************************************************************************************************
+*************************************************************************************************************
+Finished in 12 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+2018-10-04 11:53:02.293 UTC [common/tools/configtxgen] main -> INFO 001[0m Loading configuration
+2018-10-04 11:53:02.311 UTC [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 002[0m Generating new channel configtx
+2018-10-04 11:53:02.353 UTC [common/tools/configtxgen] doOutputChannelCreateTx -> INFO 003[0m Writing new channel tx
+*************************************************************************************************************
+creating channel depository by nsd using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "peer channel create -o orderer.nsd.ru:7050 -c depository -f /etc/hyperledger/artifacts/channel/depository.tx --tls --cafile /etc/hyperledger/crypto/orderer/tls/ca.crt"
+[36m2018-10-04 11:53:04.040 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.040 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:04.049 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:53:04.050 UTC [msp] GetLocalMSP -> DEBU 004[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.050 UTC [msp] GetDefaultSigningIdentity -> DEBU 005[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.051 UTC [msp] GetLocalMSP -> DEBU 006[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.051 UTC [msp] GetDefaultSigningIdentity -> DEBU 007[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.051 UTC [msp/identity] Sign -> DEBU 008[0m Sign: plaintext: 0A84060A066E73644D535012F9052D2D...53616D706C65436F6E736F727469756D 
+[36m2018-10-04 11:53:04.051 UTC [msp/identity] Sign -> DEBU 009[0m Sign: digest: DB527CB46C13B4472DF3AA06C179137FD5E32BDB00DE52804CEF6D51013E6C68 
+[36m2018-10-04 11:53:04.052 UTC [msp] GetLocalMSP -> DEBU 00a[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.052 UTC [msp] GetDefaultSigningIdentity -> DEBU 00b[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.053 UTC [msp] GetLocalMSP -> DEBU 00c[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.053 UTC [msp] GetDefaultSigningIdentity -> DEBU 00d[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.053 UTC [msp/identity] Sign -> DEBU 00e[0m Sign: plaintext: 0ABC060A1608021A0608A0FED7DD0522...65B11EA4332389DF94D006877222A6CB 
+[36m2018-10-04 11:53:04.053 UTC [msp/identity] Sign -> DEBU 00f[0m Sign: digest: 057DA7673B7156F301ED1442E7BCAA579BF57A0E06171D382BC228256192385B 
+[36m2018-10-04 11:53:04.144 UTC [msp] GetLocalMSP -> DEBU 010[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.144 UTC [msp] GetDefaultSigningIdentity -> DEBU 011[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.147 UTC [msp] GetLocalMSP -> DEBU 012[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.147 UTC [msp] GetDefaultSigningIdentity -> DEBU 013[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.147 UTC [msp/identity] Sign -> DEBU 014[0m Sign: plaintext: 0ABC060A1608021A0608A0FED7DD0522...FC792041CE9F12080A021A0012021A00 
+[36m2018-10-04 11:53:04.148 UTC [msp/identity] Sign -> DEBU 015[0m Sign: digest: 4FB64D61A55742FF40E4333ACAC339158961755AB1996DFFE11CF8E19136B56C 
+[36m2018-10-04 11:53:04.157 UTC [channelCmd] readBlock -> DEBU 016[0m Got status: &{NOT_FOUND}
+[36m2018-10-04 11:53:04.159 UTC [msp] GetLocalMSP -> DEBU 017[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.159 UTC [msp] GetDefaultSigningIdentity -> DEBU 018[0m Obtaining default signing identity
+2018-10-04 11:53:04.172 UTC [channelCmd] InitCmdFactory -> INFO 019[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:53:04.372 UTC [msp] GetLocalMSP -> DEBU 01a[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.372 UTC [msp] GetDefaultSigningIdentity -> DEBU 01b[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.374 UTC [msp] GetLocalMSP -> DEBU 01c[0m Returning existing local MSP
+[36m2018-10-04 11:53:04.374 UTC [msp] GetDefaultSigningIdentity -> DEBU 01d[0m Obtaining default signing identity
+[36m2018-10-04 11:53:04.374 UTC [msp/identity] Sign -> DEBU 01e[0m Sign: plaintext: 0ABC060A1608021A0608A0FED7DD0522...E910E87C23A112080A021A0012021A00 
+[36m2018-10-04 11:53:04.375 UTC [msp/identity] Sign -> DEBU 01f[0m Sign: digest: C206EC795047D1A83D8F03F32F46AAA69A78D10955999C940381B713272AAC36 
+[36m2018-10-04 11:53:04.383 UTC [channelCmd] readBlock -> DEBU 020[0m Received block: 0
+2018-10-04 11:53:04.384 UTC [main] main -> INFO 021[0m Exiting.....
+changing ownership of channel block files
+copying channel block file from ./artifacts to be served by www.nsd.nsd.ru
+*************************************************************************************************************
+joining channel depository by all peers of nsd using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+[36m2018-10-04 11:53:07.709 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:07.709 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:07.718 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:53:07.719 UTC [msp/identity] Sign -> DEBU 004[0m Sign: plaintext: 0A82070A5C08011A0C08A3FED7DD0510...5F0CB4A290841A080A000A000A000A00 
+[36m2018-10-04 11:53:07.719 UTC [msp/identity] Sign -> DEBU 005[0m Sign: digest: 74321A16E45021C8411E8C139C2A1CC13E835F1772606C7AF6E3FAC2F52D93DD 
+2018-10-04 11:53:07.837 UTC [channelCmd] executeJoin -> INFO 006[0m Successfully submitted proposal to join channel
+2018-10-04 11:53:07.837 UTC [main] main -> INFO 007[0m Exiting.....
+[36m2018-10-04 11:53:09.422 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:09.422 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:09.430 UTC [channelCmd] InitCmdFactory -> INFO 003[0m Endorser and orderer connections initialized
+[36m2018-10-04 11:53:09.431 UTC [msp/identity] Sign -> DEBU 004[0m Sign: plaintext: 0A82070A5C08011A0C08A5FED7DD0510...5F0CB4A290841A080A000A000A000A00 
+[36m2018-10-04 11:53:09.431 UTC [msp/identity] Sign -> DEBU 005[0m Sign: digest: 8BC5A5439077CF16D0EA7843D593D8ECF8342A0ACF72897BADA8235A904AC841 
+2018-10-04 11:53:09.489 UTC [channelCmd] executeJoin -> INFO 006[0m Successfully submitted proposal to join channel
+2018-10-04 11:53:09.489 UTC [main] main -> INFO 007[0m Exiting.....
+Register Orgs in channel depository: 
+*************************************************************************************************************
+Finished in 8 seconds
+*************************************************************************************************************
+
+ >> Org nsd is registered in channel common. Now chaincode 'security, book' will be installed and instantiated 
+Install chaincode with version: 2.0
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Install chaincode: nsd book 2.0
+*************************************************************************************************************
+installing chaincode book to peers of nsd from ./chaincode/go/book 2.0 using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode install -n book -v 2.0 -p book -l golang 
+ && CORE_PEER_ADDRESS=peer1.nsd.nsd.ru:7051 peer chaincode install -n book -v 2.0 -p book -l golang"
+[36m2018-10-04 11:53:15.245 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:15.245 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:15.245 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:15.245 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:15.245 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:15.318 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS book
+[36m2018-10-04 11:53:15.595 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:15.595 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:15.596 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: book/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:15.596 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:15.597 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:15.597 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package strconv
+[36m2018-10-04 11:53:15.597 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:15.706 UTC [golang-platform] func1 -> DEBU 00e[0m skipping dir: /opt/gopath/src/book/vendor
+[36m2018-10-04 11:53:15.706 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m processing dep: book/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:15.706 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m checking: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:15.707 UTC [golang-platform] func1 -> DEBU 011[0m skipping dir: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:15.707 UTC [golang-platform] func1 -> DEBU 012[0m skipping dir: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:15.707 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: fmt
+[36m2018-10-04 11:53:15.708 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:15.708 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: os
+[36m2018-10-04 11:53:15.708 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:15.708 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: syscall
+[36m2018-10-04 11:53:15.709 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:15.709 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: bytes
+[36m2018-10-04 11:53:15.709 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:15.709 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:15.709 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:15.710 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: unicode
+[36m2018-10-04 11:53:15.710 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:15.710 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:15.710 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:15.711 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:15.711 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:15.711 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: encoding/json
+[36m2018-10-04 11:53:15.711 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: internal/poll
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: internal/race
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: sync
+[36m2018-10-04 11:53:15.712 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:15.713 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:15.713 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:15.713 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: reflect
+[36m2018-10-04 11:53:15.713 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:15.713 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:15.714 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:15.714 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: time
+[36m2018-10-04 11:53:15.714 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:15.714 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: unsafe
+[36m2018-10-04 11:53:15.715 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:15.715 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: errors
+[36m2018-10-04 11:53:15.715 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:15.716 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: math
+[36m2018-10-04 11:53:15.716 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:15.716 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m processing dep: strconv
+[36m2018-10-04 11:53:15.716 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:15.717 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:15.717 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:15.717 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m processing dep: strings
+[36m2018-10-04 11:53:15.718 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:15.718 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:15.718 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:15.718 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: encoding
+[36m2018-10-04 11:53:15.719 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:15.719 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: io
+[36m2018-10-04 11:53:15.719 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:15.719 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: runtime
+[36m2018-10-04 11:53:15.720 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:15.720 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:15.720 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:15.720 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: sort
+[36m2018-10-04 11:53:15.721 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:15.721 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m done
+[36m2018-10-04 11:53:15.721 UTC [container] WriteFileToPackage -> DEBU 04c[0m Writing file to tarball: src/book/book.go
+[36m2018-10-04 11:53:15.726 UTC [container] WriteFileToPackage -> DEBU 04d[0m Writing file to tarball: src/book/book_test.go
+[36m2018-10-04 11:53:15.727 UTC [container] WriteFileToPackage -> DEBU 04e[0m Writing file to tarball: src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:15.729 UTC [msp/identity] Sign -> DEBU 04f[0m Sign: plaintext: 0A82070A5C08031A0C08ABFED7DD0510...3AFDFE270000FFFF69EBA95D008A0000 
+[36m2018-10-04 11:53:15.729 UTC [msp/identity] Sign -> DEBU 050[0m Sign: digest: 864CF0DC49E83B6BF2BF7AF04C53A121A64DE9FB815D87A0F034ACFD6324DE6A 
+[36m2018-10-04 11:53:15.743 UTC [chaincodeCmd] install -> DEBU 051[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:15.743 UTC [main] main -> INFO 052[0m Exiting.....
+[36m2018-10-04 11:53:15.827 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:15.827 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:15.827 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:15.827 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:15.827 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:15.890 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS book
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: book/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package strconv
+[36m2018-10-04 11:53:16.134 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] func1 -> DEBU 00e[0m skipping dir: /opt/gopath/src/book/vendor
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m processing dep: bytes
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] GetDeploymentPayload -> DEBU 011[0m processing dep: fmt
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] GetDeploymentPayload -> DEBU 012[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:16.235 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: math
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: encoding/json
+[36m2018-10-04 11:53:16.236 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: os
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m processing dep: syscall
+[36m2018-10-04 11:53:16.237 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: time
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: unicode
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:16.238 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: internal/poll
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: internal/race
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: errors
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:16.239 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m processing dep: encoding
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:16.240 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: sync
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: sort
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m processing dep: strconv
+[36m2018-10-04 11:53:16.241 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:16.242 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: strings
+[36m2018-10-04 11:53:16.242 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:16.242 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m processing dep: book/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:16.242 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m checking: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] func1 -> DEBU 03f[0m skipping dir: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] func1 -> DEBU 040[0m skipping dir: /opt/gopath/src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: runtime
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:16.243 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:16.244 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: unsafe
+[36m2018-10-04 11:53:16.244 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:16.244 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: io
+[36m2018-10-04 11:53:16.245 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:16.245 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: reflect
+[36m2018-10-04 11:53:16.245 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:16.245 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m done
+[36m2018-10-04 11:53:16.245 UTC [container] WriteFileToPackage -> DEBU 04c[0m Writing file to tarball: src/book/book.go
+[36m2018-10-04 11:53:16.250 UTC [container] WriteFileToPackage -> DEBU 04d[0m Writing file to tarball: src/book/book_test.go
+[36m2018-10-04 11:53:16.251 UTC [container] WriteFileToPackage -> DEBU 04e[0m Writing file to tarball: src/book/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:16.253 UTC [msp/identity] Sign -> DEBU 04f[0m Sign: plaintext: 0A81070A5B08031A0B08ACFED7DD0510...3AFDFE270000FFFF69EBA95D008A0000 
+[36m2018-10-04 11:53:16.253 UTC [msp/identity] Sign -> DEBU 050[0m Sign: digest: D981A072E9377906FF83642EDF6BF00CD5CC3059ACE33F2A7986DF6A5E89EA8C 
+[36m2018-10-04 11:53:16.271 UTC [chaincodeCmd] install -> DEBU 051[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:16.272 UTC [main] main -> INFO 052[0m Exiting.....
+*************************************************************************************************************
+Finished in 4 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Install chaincode: nsd security 2.0
+*************************************************************************************************************
+installing chaincode security to peers of nsd from ./chaincode/go/security 2.0 using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode install -n security -v 2.0 -p security -l golang 
+ && CORE_PEER_ADDRESS=peer1.nsd.nsd.ru:7051 peer chaincode install -n security -v 2.0 -p security -l golang"
+[36m2018-10-04 11:53:19.974 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:19.974 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:19.974 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:19.975 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:19.975 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:20.046 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS security
+[36m2018-10-04 11:53:20.377 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:20.378 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:20.379 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: security/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:20.379 UTC [golang-platform] func1 -> DEBU 00a[0m Accepting import: security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:20.379 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:20.380 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:20.380 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] func1 -> DEBU 00e[0m skipping dir: /opt/gopath/src/security/vendor
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 011[0m processing dep: runtime
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 012[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: crypto/elliptic
+[36m2018-10-04 11:53:20.644 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/crypto/elliptic exists: false
+[36m2018-10-04 11:53:20.645 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: crypto/x509/pkix
+[36m2018-10-04 11:53:20.645 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/crypto/x509/pkix exists: false
+[36m2018-10-04 11:53:20.645 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: internal/singleflight
+[36m2018-10-04 11:53:20.645 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/internal/singleflight exists: false
+[36m2018-10-04 11:53:20.645 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:20.646 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:20.646 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: crypto/internal/cipherhw
+[36m2018-10-04 11:53:20.646 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/crypto/internal/cipherhw exists: false
+[36m2018-10-04 11:53:20.646 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: crypto/sha512
+[36m2018-10-04 11:53:20.647 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/crypto/sha512 exists: false
+[36m2018-10-04 11:53:20.647 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m processing dep: encoding/pem
+[36m2018-10-04 11:53:20.647 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m checking: /opt/gopath/src/encoding/pem exists: false
+[36m2018-10-04 11:53:20.647 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: unsafe
+[36m2018-10-04 11:53:20.647 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:20.648 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: unicode
+[36m2018-10-04 11:53:20.648 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:20.648 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: crypto/subtle
+[36m2018-10-04 11:53:20.649 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/crypto/subtle exists: false
+[36m2018-10-04 11:53:20.649 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:20.649 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:20.649 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: crypto
+[36m2018-10-04 11:53:20.650 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/crypto exists: false
+[36m2018-10-04 11:53:20.650 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: encoding/hex
+[36m2018-10-04 11:53:20.650 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/encoding/hex exists: false
+[36m2018-10-04 11:53:20.650 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: fmt
+[36m2018-10-04 11:53:20.651 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:20.651 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m processing dep: strings
+[36m2018-10-04 11:53:20.651 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:20.651 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:20.652 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:20.652 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: internal/nettrace
+[36m2018-10-04 11:53:20.652 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/internal/nettrace exists: false
+[36m2018-10-04 11:53:20.652 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: math/rand
+[36m2018-10-04 11:53:20.653 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/math/rand exists: false
+[36m2018-10-04 11:53:20.653 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: security/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:20.653 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:20.653 UTC [golang-platform] func1 -> DEBU 039[0m skipping dir: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:20.654 UTC [golang-platform] func1 -> DEBU 03a[0m skipping dir: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:20.654 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: crypto/aes
+[36m2018-10-04 11:53:20.654 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/crypto/aes exists: false
+[36m2018-10-04 11:53:20.654 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m processing dep: syscall
+[36m2018-10-04 11:53:20.654 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:20.655 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m processing dep: crypto/sha256
+[36m2018-10-04 11:53:20.655 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m checking: /opt/gopath/src/crypto/sha256 exists: false
+[36m2018-10-04 11:53:20.655 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: crypto/cipher
+[36m2018-10-04 11:53:20.655 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/crypto/cipher exists: false
+[36m2018-10-04 11:53:20.655 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:20.656 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates exists: true
+[36m2018-10-04 11:53:20.657 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: crypto/md5
+[36m2018-10-04 11:53:20.657 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/crypto/md5 exists: false
+[36m2018-10-04 11:53:20.657 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: encoding/binary
+[36m2018-10-04 11:53:20.657 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/encoding/binary exists: false
+[36m2018-10-04 11:53:20.658 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: strconv
+[36m2018-10-04 11:53:20.658 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:20.658 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m processing dep: bufio
+[36m2018-10-04 11:53:20.658 UTC [golang-platform] GetDeploymentPayload -> DEBU 04c[0m checking: /opt/gopath/src/bufio exists: false
+[36m2018-10-04 11:53:20.659 UTC [golang-platform] GetDeploymentPayload -> DEBU 04d[0m processing dep: crypto/ecdsa
+[36m2018-10-04 11:53:20.659 UTC [golang-platform] GetDeploymentPayload -> DEBU 04e[0m checking: /opt/gopath/src/crypto/ecdsa exists: false
+[36m2018-10-04 11:53:20.659 UTC [golang-platform] GetDeploymentPayload -> DEBU 04f[0m processing dep: crypto/sha1
+[36m2018-10-04 11:53:20.660 UTC [golang-platform] GetDeploymentPayload -> DEBU 050[0m checking: /opt/gopath/src/crypto/sha1 exists: false
+[36m2018-10-04 11:53:20.660 UTC [golang-platform] GetDeploymentPayload -> DEBU 051[0m processing dep: hash
+[36m2018-10-04 11:53:20.660 UTC [golang-platform] GetDeploymentPayload -> DEBU 052[0m checking: /opt/gopath/src/hash exists: false
+[36m2018-10-04 11:53:20.660 UTC [golang-platform] GetDeploymentPayload -> DEBU 053[0m processing dep: math/big
+[36m2018-10-04 11:53:20.661 UTC [golang-platform] GetDeploymentPayload -> DEBU 054[0m checking: /opt/gopath/src/math/big exists: false
+[36m2018-10-04 11:53:20.661 UTC [golang-platform] GetDeploymentPayload -> DEBU 055[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:20.661 UTC [golang-platform] GetDeploymentPayload -> DEBU 056[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:20.662 UTC [golang-platform] GetDeploymentPayload -> DEBU 057[0m processing dep: crypto/x509
+[36m2018-10-04 11:53:20.662 UTC [golang-platform] GetDeploymentPayload -> DEBU 058[0m checking: /opt/gopath/src/crypto/x509 exists: false
+[36m2018-10-04 11:53:20.662 UTC [golang-platform] GetDeploymentPayload -> DEBU 059[0m processing dep: math
+[36m2018-10-04 11:53:20.663 UTC [golang-platform] GetDeploymentPayload -> DEBU 05a[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:20.663 UTC [golang-platform] GetDeploymentPayload -> DEBU 05b[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:20.664 UTC [golang-platform] GetDeploymentPayload -> DEBU 05c[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:20.664 UTC [golang-platform] GetDeploymentPayload -> DEBU 05d[0m processing dep: sync
+[36m2018-10-04 11:53:20.664 UTC [golang-platform] GetDeploymentPayload -> DEBU 05e[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:20.665 UTC [golang-platform] GetDeploymentPayload -> DEBU 05f[0m processing dep: crypto/des
+[36m2018-10-04 11:53:20.665 UTC [golang-platform] GetDeploymentPayload -> DEBU 060[0m checking: /opt/gopath/src/crypto/des exists: false
+[36m2018-10-04 11:53:20.665 UTC [golang-platform] GetDeploymentPayload -> DEBU 061[0m processing dep: crypto/rsa
+[36m2018-10-04 11:53:20.666 UTC [golang-platform] GetDeploymentPayload -> DEBU 062[0m checking: /opt/gopath/src/crypto/rsa exists: false
+[36m2018-10-04 11:53:20.666 UTC [golang-platform] GetDeploymentPayload -> DEBU 063[0m processing dep: math/bits
+[36m2018-10-04 11:53:20.666 UTC [golang-platform] GetDeploymentPayload -> DEBU 064[0m checking: /opt/gopath/src/math/bits exists: false
+[36m2018-10-04 11:53:20.666 UTC [golang-platform] GetDeploymentPayload -> DEBU 065[0m processing dep: internal/race
+[36m2018-10-04 11:53:20.667 UTC [golang-platform] GetDeploymentPayload -> DEBU 066[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:20.667 UTC [golang-platform] GetDeploymentPayload -> DEBU 067[0m processing dep: encoding/json
+[36m2018-10-04 11:53:20.668 UTC [golang-platform] GetDeploymentPayload -> DEBU 068[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:20.668 UTC [golang-platform] GetDeploymentPayload -> DEBU 069[0m processing dep: internal/poll
+[36m2018-10-04 11:53:20.668 UTC [golang-platform] GetDeploymentPayload -> DEBU 06a[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:20.669 UTC [golang-platform] GetDeploymentPayload -> DEBU 06b[0m processing dep: reflect
+[36m2018-10-04 11:53:20.669 UTC [golang-platform] GetDeploymentPayload -> DEBU 06c[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:20.669 UTC [golang-platform] GetDeploymentPayload -> DEBU 06d[0m processing dep: io/ioutil
+[36m2018-10-04 11:53:20.670 UTC [golang-platform] GetDeploymentPayload -> DEBU 06e[0m checking: /opt/gopath/src/io/ioutil exists: false
+[36m2018-10-04 11:53:20.670 UTC [golang-platform] GetDeploymentPayload -> DEBU 06f[0m processing dep: bytes
+[36m2018-10-04 11:53:20.670 UTC [golang-platform] GetDeploymentPayload -> DEBU 070[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:20.671 UTC [golang-platform] GetDeploymentPayload -> DEBU 071[0m processing dep: io
+[36m2018-10-04 11:53:20.671 UTC [golang-platform] GetDeploymentPayload -> DEBU 072[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:20.671 UTC [golang-platform] GetDeploymentPayload -> DEBU 073[0m processing dep: os
+[36m2018-10-04 11:53:20.672 UTC [golang-platform] GetDeploymentPayload -> DEBU 074[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:20.672 UTC [golang-platform] GetDeploymentPayload -> DEBU 075[0m processing dep: context
+[36m2018-10-04 11:53:20.673 UTC [golang-platform] GetDeploymentPayload -> DEBU 076[0m checking: /opt/gopath/src/context exists: false
+[36m2018-10-04 11:53:20.673 UTC [golang-platform] GetDeploymentPayload -> DEBU 077[0m processing dep: crypto/dsa
+[36m2018-10-04 11:53:20.673 UTC [golang-platform] GetDeploymentPayload -> DEBU 078[0m checking: /opt/gopath/src/crypto/dsa exists: false
+[36m2018-10-04 11:53:20.673 UTC [golang-platform] GetDeploymentPayload -> DEBU 079[0m processing dep: encoding
+[36m2018-10-04 11:53:20.674 UTC [golang-platform] GetDeploymentPayload -> DEBU 07a[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:20.674 UTC [golang-platform] GetDeploymentPayload -> DEBU 07b[0m processing dep: encoding/asn1
+[36m2018-10-04 11:53:20.674 UTC [golang-platform] GetDeploymentPayload -> DEBU 07c[0m checking: /opt/gopath/src/encoding/asn1 exists: false
+[36m2018-10-04 11:53:20.675 UTC [golang-platform] GetDeploymentPayload -> DEBU 07d[0m processing dep: internal/syscall/unix
+[36m2018-10-04 11:53:20.675 UTC [golang-platform] GetDeploymentPayload -> DEBU 07e[0m checking: /opt/gopath/src/internal/syscall/unix exists: false
+[36m2018-10-04 11:53:20.676 UTC [golang-platform] GetDeploymentPayload -> DEBU 07f[0m processing dep: errors
+[36m2018-10-04 11:53:20.676 UTC [golang-platform] GetDeploymentPayload -> DEBU 080[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:20.676 UTC [golang-platform] GetDeploymentPayload -> DEBU 081[0m processing dep: time
+[36m2018-10-04 11:53:20.677 UTC [golang-platform] GetDeploymentPayload -> DEBU 082[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:20.677 UTC [golang-platform] GetDeploymentPayload -> DEBU 083[0m processing dep: net
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 084[0m checking: /opt/gopath/src/net exists: false
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 085[0m processing dep: path/filepath
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 086[0m checking: /opt/gopath/src/path/filepath exists: false
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 087[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 088[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:20.678 UTC [golang-platform] GetDeploymentPayload -> DEBU 089[0m processing dep: sort
+[36m2018-10-04 11:53:20.679 UTC [golang-platform] GetDeploymentPayload -> DEBU 08a[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:20.679 UTC [golang-platform] GetDeploymentPayload -> DEBU 08b[0m processing dep: crypto/rand
+[36m2018-10-04 11:53:20.680 UTC [golang-platform] GetDeploymentPayload -> DEBU 08c[0m checking: /opt/gopath/src/crypto/rand exists: false
+[36m2018-10-04 11:53:20.680 UTC [golang-platform] GetDeploymentPayload -> DEBU 08d[0m processing dep: runtime/cgo
+[36m2018-10-04 11:53:20.680 UTC [golang-platform] GetDeploymentPayload -> DEBU 08e[0m checking: /opt/gopath/src/runtime/cgo exists: false
+[36m2018-10-04 11:53:20.680 UTC [golang-platform] GetDeploymentPayload -> DEBU 08f[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:20.680 UTC [golang-platform] GetDeploymentPayload -> DEBU 090[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:20.681 UTC [golang-platform] GetDeploymentPayload -> DEBU 091[0m done
+[36m2018-10-04 11:53:20.681 UTC [container] WriteFileToPackage -> DEBU 092[0m Writing file to tarball: src/security/security.go
+[36m2018-10-04 11:53:20.685 UTC [container] WriteFileToPackage -> DEBU 093[0m Writing file to tarball: src/security/security_test.go
+[36m2018-10-04 11:53:20.686 UTC [container] WriteFileToPackage -> DEBU 094[0m Writing file to tarball: src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates/certificates.go
+[36m2018-10-04 11:53:20.687 UTC [container] WriteFileToPackage -> DEBU 095[0m Writing file to tarball: src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:20.689 UTC [msp/identity] Sign -> DEBU 096[0m Sign: plaintext: 0A82070A5C08031A0C08B0FED7DD0510...D4F37F010000FFFF3BA55A6B00800000 
+[36m2018-10-04 11:53:20.690 UTC [msp/identity] Sign -> DEBU 097[0m Sign: digest: B9A3234273CE8672949A0DCB47F1C69CAD5C31227159F6630DAEC34B382E40E5 
+[36m2018-10-04 11:53:20.707 UTC [chaincodeCmd] install -> DEBU 098[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:20.707 UTC [main] main -> INFO 099[0m Exiting.....
+[36m2018-10-04 11:53:20.802 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:20.802 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:20.803 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:20.803 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:20.803 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:20.873 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS security
+[36m2018-10-04 11:53:21.170 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:21.171 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:21.171 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: security/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:21.171 UTC [golang-platform] func1 -> DEBU 00a[0m Accepting import: security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:21.172 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:21.172 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:21.172 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:21.429 UTC [golang-platform] func1 -> DEBU 00e[0m skipping dir: /opt/gopath/src/security/vendor
+[36m2018-10-04 11:53:21.429 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m processing dep: encoding/json
+[36m2018-10-04 11:53:21.430 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:21.430 UTC [golang-platform] GetDeploymentPayload -> DEBU 011[0m processing dep: crypto/rsa
+[36m2018-10-04 11:53:21.431 UTC [golang-platform] GetDeploymentPayload -> DEBU 012[0m checking: /opt/gopath/src/crypto/rsa exists: false
+[36m2018-10-04 11:53:21.431 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: crypto/x509/pkix
+[36m2018-10-04 11:53:21.431 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/crypto/x509/pkix exists: false
+[36m2018-10-04 11:53:21.432 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: encoding
+[36m2018-10-04 11:53:21.432 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:21.432 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: sync
+[36m2018-10-04 11:53:21.433 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:21.433 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: context
+[36m2018-10-04 11:53:21.433 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/context exists: false
+[36m2018-10-04 11:53:21.433 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: internal/poll
+[36m2018-10-04 11:53:21.434 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:21.434 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: syscall
+[36m2018-10-04 11:53:21.434 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:21.435 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m processing dep: crypto/des
+[36m2018-10-04 11:53:21.435 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m checking: /opt/gopath/src/crypto/des exists: false
+[36m2018-10-04 11:53:21.435 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: crypto/sha1
+[36m2018-10-04 11:53:21.436 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/crypto/sha1 exists: false
+[36m2018-10-04 11:53:21.436 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: math/rand
+[36m2018-10-04 11:53:21.436 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/math/rand exists: false
+[36m2018-10-04 11:53:21.437 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: net
+[36m2018-10-04 11:53:21.437 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/net exists: false
+[36m2018-10-04 11:53:21.437 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: unicode
+[36m2018-10-04 11:53:21.438 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:21.438 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: unsafe
+[36m2018-10-04 11:53:21.438 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:21.438 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: crypto/x509
+[36m2018-10-04 11:53:21.438 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/crypto/x509 exists: false
+[36m2018-10-04 11:53:21.439 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: security/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:21.439 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:21.440 UTC [golang-platform] func1 -> DEBU 02f[0m skipping dir: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:21.440 UTC [golang-platform] func1 -> DEBU 030[0m skipping dir: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:21.441 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: reflect
+[36m2018-10-04 11:53:21.441 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:21.441 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: crypto/aes
+[36m2018-10-04 11:53:21.442 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/crypto/aes exists: false
+[36m2018-10-04 11:53:21.442 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: internal/syscall/unix
+[36m2018-10-04 11:53:21.443 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/internal/syscall/unix exists: false
+[36m2018-10-04 11:53:21.443 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:21.443 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:21.443 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m processing dep: sort
+[36m2018-10-04 11:53:21.444 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:21.445 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: crypto/md5
+[36m2018-10-04 11:53:21.445 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/crypto/md5 exists: false
+[36m2018-10-04 11:53:21.445 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m processing dep: encoding/hex
+[36m2018-10-04 11:53:21.446 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m checking: /opt/gopath/src/encoding/hex exists: false
+[36m2018-10-04 11:53:21.446 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m processing dep: path/filepath
+[36m2018-10-04 11:53:21.446 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m checking: /opt/gopath/src/path/filepath exists: false
+[36m2018-10-04 11:53:21.447 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:21.448 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:21.448 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: errors
+[36m2018-10-04 11:53:21.449 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:21.449 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: fmt
+[36m2018-10-04 11:53:21.450 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:21.450 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:21.451 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:21.451 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: crypto/ecdsa
+[36m2018-10-04 11:53:21.451 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/crypto/ecdsa exists: false
+[36m2018-10-04 11:53:21.451 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m processing dep: crypto/elliptic
+[36m2018-10-04 11:53:21.452 UTC [golang-platform] GetDeploymentPayload -> DEBU 04c[0m checking: /opt/gopath/src/crypto/elliptic exists: false
+[36m2018-10-04 11:53:21.452 UTC [golang-platform] GetDeploymentPayload -> DEBU 04d[0m processing dep: crypto/dsa
+[36m2018-10-04 11:53:21.453 UTC [golang-platform] GetDeploymentPayload -> DEBU 04e[0m checking: /opt/gopath/src/crypto/dsa exists: false
+[36m2018-10-04 11:53:21.453 UTC [golang-platform] GetDeploymentPayload -> DEBU 04f[0m processing dep: crypto/rand
+[36m2018-10-04 11:53:21.454 UTC [golang-platform] GetDeploymentPayload -> DEBU 050[0m checking: /opt/gopath/src/crypto/rand exists: false
+[36m2018-10-04 11:53:21.454 UTC [golang-platform] GetDeploymentPayload -> DEBU 051[0m processing dep: crypto/subtle
+[36m2018-10-04 11:53:21.455 UTC [golang-platform] GetDeploymentPayload -> DEBU 052[0m checking: /opt/gopath/src/crypto/subtle exists: false
+[36m2018-10-04 11:53:21.455 UTC [golang-platform] GetDeploymentPayload -> DEBU 053[0m processing dep: internal/singleflight
+[36m2018-10-04 11:53:21.456 UTC [golang-platform] GetDeploymentPayload -> DEBU 054[0m checking: /opt/gopath/src/internal/singleflight exists: false
+[36m2018-10-04 11:53:21.456 UTC [golang-platform] GetDeploymentPayload -> DEBU 055[0m processing dep: math
+[36m2018-10-04 11:53:21.456 UTC [golang-platform] GetDeploymentPayload -> DEBU 056[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:21.457 UTC [golang-platform] GetDeploymentPayload -> DEBU 057[0m processing dep: runtime
+[36m2018-10-04 11:53:21.457 UTC [golang-platform] GetDeploymentPayload -> DEBU 058[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:21.458 UTC [golang-platform] GetDeploymentPayload -> DEBU 059[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:21.458 UTC [golang-platform] GetDeploymentPayload -> DEBU 05a[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:21.458 UTC [golang-platform] GetDeploymentPayload -> DEBU 05b[0m processing dep: math/bits
+[36m2018-10-04 11:53:21.458 UTC [golang-platform] GetDeploymentPayload -> DEBU 05c[0m checking: /opt/gopath/src/math/bits exists: false
+[36m2018-10-04 11:53:21.459 UTC [golang-platform] GetDeploymentPayload -> DEBU 05d[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:21.459 UTC [golang-platform] GetDeploymentPayload -> DEBU 05e[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:21.459 UTC [golang-platform] GetDeploymentPayload -> DEBU 05f[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:21.460 UTC [golang-platform] GetDeploymentPayload -> DEBU 060[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:21.460 UTC [golang-platform] GetDeploymentPayload -> DEBU 061[0m processing dep: bufio
+[36m2018-10-04 11:53:21.460 UTC [golang-platform] GetDeploymentPayload -> DEBU 062[0m checking: /opt/gopath/src/bufio exists: false
+[36m2018-10-04 11:53:21.460 UTC [golang-platform] GetDeploymentPayload -> DEBU 063[0m processing dep: crypto/sha256
+[36m2018-10-04 11:53:21.461 UTC [golang-platform] GetDeploymentPayload -> DEBU 064[0m checking: /opt/gopath/src/crypto/sha256 exists: false
+[36m2018-10-04 11:53:21.461 UTC [golang-platform] GetDeploymentPayload -> DEBU 065[0m processing dep: os
+[36m2018-10-04 11:53:21.461 UTC [golang-platform] GetDeploymentPayload -> DEBU 066[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:21.461 UTC [golang-platform] GetDeploymentPayload -> DEBU 067[0m processing dep: strings
+[36m2018-10-04 11:53:21.462 UTC [golang-platform] GetDeploymentPayload -> DEBU 068[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:21.462 UTC [golang-platform] GetDeploymentPayload -> DEBU 069[0m processing dep: hash
+[36m2018-10-04 11:53:21.462 UTC [golang-platform] GetDeploymentPayload -> DEBU 06a[0m checking: /opt/gopath/src/hash exists: false
+[36m2018-10-04 11:53:21.463 UTC [golang-platform] GetDeploymentPayload -> DEBU 06b[0m processing dep: bytes
+[36m2018-10-04 11:53:21.463 UTC [golang-platform] GetDeploymentPayload -> DEBU 06c[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:21.463 UTC [golang-platform] GetDeploymentPayload -> DEBU 06d[0m processing dep: time
+[36m2018-10-04 11:53:21.463 UTC [golang-platform] GetDeploymentPayload -> DEBU 06e[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:21.464 UTC [golang-platform] GetDeploymentPayload -> DEBU 06f[0m processing dep: security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:21.464 UTC [golang-platform] GetDeploymentPayload -> DEBU 070[0m checking: /opt/gopath/src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates exists: true
+[36m2018-10-04 11:53:21.465 UTC [golang-platform] GetDeploymentPayload -> DEBU 071[0m processing dep: encoding/pem
+[36m2018-10-04 11:53:21.465 UTC [golang-platform] GetDeploymentPayload -> DEBU 072[0m checking: /opt/gopath/src/encoding/pem exists: false
+[36m2018-10-04 11:53:21.465 UTC [golang-platform] GetDeploymentPayload -> DEBU 073[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:21.465 UTC [golang-platform] GetDeploymentPayload -> DEBU 074[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:21.466 UTC [golang-platform] GetDeploymentPayload -> DEBU 075[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:21.466 UTC [golang-platform] GetDeploymentPayload -> DEBU 076[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:21.466 UTC [golang-platform] GetDeploymentPayload -> DEBU 077[0m processing dep: strconv
+[36m2018-10-04 11:53:21.467 UTC [golang-platform] GetDeploymentPayload -> DEBU 078[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:21.467 UTC [golang-platform] GetDeploymentPayload -> DEBU 079[0m processing dep: crypto
+[36m2018-10-04 11:53:21.467 UTC [golang-platform] GetDeploymentPayload -> DEBU 07a[0m checking: /opt/gopath/src/crypto exists: false
+[36m2018-10-04 11:53:21.467 UTC [golang-platform] GetDeploymentPayload -> DEBU 07b[0m processing dep: crypto/cipher
+[36m2018-10-04 11:53:21.468 UTC [golang-platform] GetDeploymentPayload -> DEBU 07c[0m checking: /opt/gopath/src/crypto/cipher exists: false
+[36m2018-10-04 11:53:21.468 UTC [golang-platform] GetDeploymentPayload -> DEBU 07d[0m processing dep: encoding/asn1
+[36m2018-10-04 11:53:21.468 UTC [golang-platform] GetDeploymentPayload -> DEBU 07e[0m checking: /opt/gopath/src/encoding/asn1 exists: false
+[36m2018-10-04 11:53:21.468 UTC [golang-platform] GetDeploymentPayload -> DEBU 07f[0m processing dep: math/big
+[36m2018-10-04 11:53:21.469 UTC [golang-platform] GetDeploymentPayload -> DEBU 080[0m checking: /opt/gopath/src/math/big exists: false
+[36m2018-10-04 11:53:21.469 UTC [golang-platform] GetDeploymentPayload -> DEBU 081[0m processing dep: crypto/internal/cipherhw
+[36m2018-10-04 11:53:21.469 UTC [golang-platform] GetDeploymentPayload -> DEBU 082[0m checking: /opt/gopath/src/crypto/internal/cipherhw exists: false
+[36m2018-10-04 11:53:21.469 UTC [golang-platform] GetDeploymentPayload -> DEBU 083[0m processing dep: crypto/sha512
+[36m2018-10-04 11:53:21.470 UTC [golang-platform] GetDeploymentPayload -> DEBU 084[0m checking: /opt/gopath/src/crypto/sha512 exists: false
+[36m2018-10-04 11:53:21.470 UTC [golang-platform] GetDeploymentPayload -> DEBU 085[0m processing dep: internal/nettrace
+[36m2018-10-04 11:53:21.470 UTC [golang-platform] GetDeploymentPayload -> DEBU 086[0m checking: /opt/gopath/src/internal/nettrace exists: false
+[36m2018-10-04 11:53:21.471 UTC [golang-platform] GetDeploymentPayload -> DEBU 087[0m processing dep: runtime/cgo
+[36m2018-10-04 11:53:21.471 UTC [golang-platform] GetDeploymentPayload -> DEBU 088[0m checking: /opt/gopath/src/runtime/cgo exists: false
+[36m2018-10-04 11:53:21.471 UTC [golang-platform] GetDeploymentPayload -> DEBU 089[0m processing dep: internal/race
+[36m2018-10-04 11:53:21.472 UTC [golang-platform] GetDeploymentPayload -> DEBU 08a[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:21.472 UTC [golang-platform] GetDeploymentPayload -> DEBU 08b[0m processing dep: io
+[36m2018-10-04 11:53:21.472 UTC [golang-platform] GetDeploymentPayload -> DEBU 08c[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:21.473 UTC [golang-platform] GetDeploymentPayload -> DEBU 08d[0m processing dep: encoding/binary
+[36m2018-10-04 11:53:21.473 UTC [golang-platform] GetDeploymentPayload -> DEBU 08e[0m checking: /opt/gopath/src/encoding/binary exists: false
+[36m2018-10-04 11:53:21.473 UTC [golang-platform] GetDeploymentPayload -> DEBU 08f[0m processing dep: io/ioutil
+[36m2018-10-04 11:53:21.473 UTC [golang-platform] GetDeploymentPayload -> DEBU 090[0m checking: /opt/gopath/src/io/ioutil exists: false
+[36m2018-10-04 11:53:21.473 UTC [golang-platform] GetDeploymentPayload -> DEBU 091[0m done
+[36m2018-10-04 11:53:21.473 UTC [container] WriteFileToPackage -> DEBU 092[0m Writing file to tarball: src/security/security.go
+[36m2018-10-04 11:53:21.477 UTC [container] WriteFileToPackage -> DEBU 093[0m Writing file to tarball: src/security/security_test.go
+[36m2018-10-04 11:53:21.478 UTC [container] WriteFileToPackage -> DEBU 094[0m Writing file to tarball: src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates/certificates.go
+[36m2018-10-04 11:53:21.479 UTC [container] WriteFileToPackage -> DEBU 095[0m Writing file to tarball: src/security/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:21.481 UTC [msp/identity] Sign -> DEBU 096[0m Sign: plaintext: 0A82070A5C08031A0C08B1FED7DD0510...D4F37F010000FFFF3BA55A6B00800000 
+[36m2018-10-04 11:53:21.481 UTC [msp/identity] Sign -> DEBU 097[0m Sign: digest: 9EABD4DE21BA7CBE44F695E7951B8B9146E207937B1C1D452C3C55577DE8D802 
+[36m2018-10-04 11:53:21.495 UTC [chaincodeCmd] install -> DEBU 098[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:21.495 UTC [main] main -> INFO 099[0m Exiting.....
+*************************************************************************************************************
+Finished in 4 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Install chaincode: nsd instruction 2.0
+*************************************************************************************************************
+installing chaincode instruction to peers of nsd from ./chaincode/go/instruction 2.0 using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode install -n instruction -v 2.0 -p instruction -l golang 
+ && CORE_PEER_ADDRESS=peer1.nsd.nsd.ru:7051 peer chaincode install -n instruction -v 2.0 -p instruction -l golang"
+[36m2018-10-04 11:53:25.437 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:25.437 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:25.438 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:25.438 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:25.439 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:25.514 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS instruction
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package bytes
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 009[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00a[0m Accepting import: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00b[0m Accepting import: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00e[0m Discarding GOROOT package strconv
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 00f[0m Discarding GOROOT package strings
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 010[0m Discarding GOROOT package text/template
+[36m2018-10-04 11:53:25.844 UTC [golang-platform] func1 -> DEBU 011[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:26.100 UTC [golang-platform] func1 -> DEBU 012[0m skipping dir: /opt/gopath/src/instruction/vendor
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: sort
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: bufio
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/bufio exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: runtime/cgo
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/runtime/cgo exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: encoding/json
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: internal/race
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:26.101 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: crypto/rsa
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/crypto/rsa exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: unsafe
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: crypto/elliptic
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/crypto/elliptic exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: crypto/rand
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/crypto/rand exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: crypto/x509
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/crypto/x509 exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: strconv
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: os
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: strings
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:26.102 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: encoding/hex
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/encoding/hex exists: false
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m processing dep: path/filepath
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m checking: /opt/gopath/src/path/filepath exists: false
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] func1 -> DEBU 03d[0m skipping dir: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] func1 -> DEBU 03e[0m skipping dir: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: crypto/cipher
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/crypto/cipher exists: false
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: crypto/x509/pkix
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/crypto/x509/pkix exists: false
+[36m2018-10-04 11:53:26.103 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: math/big
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/math/big exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: math
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m processing dep: crypto/internal/cipherhw
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04c[0m checking: /opt/gopath/src/crypto/internal/cipherhw exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04d[0m processing dep: crypto/sha512
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04e[0m checking: /opt/gopath/src/crypto/sha512 exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 04f[0m processing dep: encoding/pem
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 050[0m checking: /opt/gopath/src/encoding/pem exists: false
+[36m2018-10-04 11:53:26.104 UTC [golang-platform] GetDeploymentPayload -> DEBU 051[0m processing dep: io/ioutil
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 052[0m checking: /opt/gopath/src/io/ioutil exists: false
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 053[0m processing dep: runtime
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 054[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 055[0m processing dep: crypto/aes
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 056[0m checking: /opt/gopath/src/crypto/aes exists: false
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 057[0m processing dep: crypto/dsa
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 058[0m checking: /opt/gopath/src/crypto/dsa exists: false
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 059[0m processing dep: encoding/asn1
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 05a[0m checking: /opt/gopath/src/encoding/asn1 exists: false
+[36m2018-10-04 11:53:26.105 UTC [golang-platform] GetDeploymentPayload -> DEBU 05b[0m processing dep: hash
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 05c[0m checking: /opt/gopath/src/hash exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 05d[0m processing dep: internal/nettrace
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 05e[0m checking: /opt/gopath/src/internal/nettrace exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 05f[0m processing dep: unicode
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 060[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 061[0m processing dep: context
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 062[0m checking: /opt/gopath/src/context exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 063[0m processing dep: crypto/ecdsa
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 064[0m checking: /opt/gopath/src/crypto/ecdsa exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 065[0m processing dep: errors
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 066[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:26.106 UTC [golang-platform] GetDeploymentPayload -> DEBU 067[0m processing dep: fmt
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 068[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 069[0m processing dep: time
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06a[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06b[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06c[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06d[0m processing dep: math/bits
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06e[0m checking: /opt/gopath/src/math/bits exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 06f[0m processing dep: sync
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 070[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 071[0m processing dep: syscall
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 072[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 073[0m processing dep: crypto/des
+[36m2018-10-04 11:53:26.107 UTC [golang-platform] GetDeploymentPayload -> DEBU 074[0m checking: /opt/gopath/src/crypto/des exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 075[0m processing dep: encoding/binary
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 076[0m checking: /opt/gopath/src/encoding/binary exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 077[0m processing dep: internal/singleflight
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 078[0m checking: /opt/gopath/src/internal/singleflight exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 079[0m processing dep: encoding
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07a[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07b[0m processing dep: internal/poll
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07c[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07d[0m processing dep: reflect
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07e[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 07f[0m processing dep: crypto/subtle
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 080[0m checking: /opt/gopath/src/crypto/subtle exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 081[0m processing dep: math/rand
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 082[0m checking: /opt/gopath/src/math/rand exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 083[0m processing dep: net
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 084[0m checking: /opt/gopath/src/net exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 085[0m processing dep: bytes
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 086[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:26.108 UTC [golang-platform] GetDeploymentPayload -> DEBU 087[0m processing dep: crypto
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 088[0m checking: /opt/gopath/src/crypto exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 089[0m processing dep: crypto/md5
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08a[0m checking: /opt/gopath/src/crypto/md5 exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08b[0m processing dep: crypto/sha1
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08c[0m checking: /opt/gopath/src/crypto/sha1 exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08d[0m processing dep: internal/syscall/unix
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08e[0m checking: /opt/gopath/src/internal/syscall/unix exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 08f[0m processing dep: io
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 090[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 091[0m processing dep: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 092[0m checking: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates exists: true
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 093[0m processing dep: crypto/sha256
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 094[0m checking: /opt/gopath/src/crypto/sha256 exists: false
+[36m2018-10-04 11:53:26.109 UTC [golang-platform] GetDeploymentPayload -> DEBU 095[0m done
+[36m2018-10-04 11:53:26.110 UTC [container] WriteFileToPackage -> DEBU 096[0m Writing file to tarball: src/instruction/instruction.go
+[36m2018-10-04 11:53:26.118 UTC [container] WriteFileToPackage -> DEBU 097[0m Writing file to tarball: src/instruction/instruction_test.go
+[36m2018-10-04 11:53:26.122 UTC [container] WriteFileToPackage -> DEBU 098[0m Writing file to tarball: src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates/certificates.go
+[36m2018-10-04 11:53:26.122 UTC [container] WriteFileToPackage -> DEBU 099[0m Writing file to tarball: src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:26.125 UTC [msp/identity] Sign -> DEBU 09a[0m Sign: plaintext: 0A81070A5B08031A0B08B6FED7DD0510...F4FBFF010000FFFFCD54A2F700220100 
+[36m2018-10-04 11:53:26.125 UTC [msp/identity] Sign -> DEBU 09b[0m Sign: digest: 0D8583A1C24D79D22364E133728E50E14BE9B8EA0CEA26FEFB0EE315A9ABBDAB 
+[36m2018-10-04 11:53:26.135 UTC [chaincodeCmd] install -> DEBU 09c[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:26.135 UTC [main] main -> INFO 09d[0m Exiting.....
+[36m2018-10-04 11:53:26.232 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:26.233 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:26.233 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:26.233 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:26.233 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:26.305 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS instruction
+[36m2018-10-04 11:53:26.606 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package bytes
+[36m2018-10-04 11:53:26.606 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:26.606 UTC [golang-platform] func1 -> DEBU 009[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:26.607 UTC [golang-platform] func1 -> DEBU 00a[0m Accepting import: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:26.607 UTC [golang-platform] func1 -> DEBU 00b[0m Accepting import: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:26.608 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:26.608 UTC [golang-platform] func1 -> DEBU 00d[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:26.609 UTC [golang-platform] func1 -> DEBU 00e[0m Discarding GOROOT package strconv
+[36m2018-10-04 11:53:26.609 UTC [golang-platform] func1 -> DEBU 00f[0m Discarding GOROOT package strings
+[36m2018-10-04 11:53:26.610 UTC [golang-platform] func1 -> DEBU 010[0m Discarding GOROOT package text/template
+[36m2018-10-04 11:53:26.610 UTC [golang-platform] func1 -> DEBU 011[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] func1 -> DEBU 012[0m skipping dir: /opt/gopath/src/instruction/vendor
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m processing dep: unsafe
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m processing dep: internal/nettrace
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m checking: /opt/gopath/src/internal/nettrace exists: false
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m processing dep: internal/syscall/unix
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m checking: /opt/gopath/src/internal/syscall/unix exists: false
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m processing dep: math/big
+[36m2018-10-04 11:53:26.871 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m checking: /opt/gopath/src/math/big exists: false
+[36m2018-10-04 11:53:26.872 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m processing dep: hash
+[36m2018-10-04 11:53:26.872 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m checking: /opt/gopath/src/hash exists: false
+[36m2018-10-04 11:53:26.872 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m processing dep: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:26.872 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m checking: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:26.872 UTC [golang-platform] func1 -> DEBU 01f[0m skipping dir: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] func1 -> DEBU 020[0m skipping dir: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m processing dep: internal/race
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m processing dep: crypto/des
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m checking: /opt/gopath/src/crypto/des exists: false
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:26.873 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m processing dep: crypto/elliptic
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m checking: /opt/gopath/src/crypto/elliptic exists: false
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m processing dep: encoding/pem
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m checking: /opt/gopath/src/encoding/pem exists: false
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m processing dep: bytes
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m processing dep: crypto/cipher
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m checking: /opt/gopath/src/crypto/cipher exists: false
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m processing dep: io
+[36m2018-10-04 11:53:26.874 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m processing dep: crypto/rand
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m checking: /opt/gopath/src/crypto/rand exists: false
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m processing dep: path/filepath
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m checking: /opt/gopath/src/path/filepath exists: false
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m processing dep: crypto/x509/pkix
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m checking: /opt/gopath/src/crypto/x509/pkix exists: false
+[36m2018-10-04 11:53:26.875 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m processing dep: encoding/hex
+[36m2018-10-04 11:53:26.876 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m checking: /opt/gopath/src/encoding/hex exists: false
+[36m2018-10-04 11:53:26.876 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:26.876 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:26.876 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m processing dep: context
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m checking: /opt/gopath/src/context exists: false
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m processing dep: crypto/x509
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m checking: /opt/gopath/src/crypto/x509 exists: false
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m processing dep: fmt
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m processing dep: reflect
+[36m2018-10-04 11:53:26.877 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m processing dep: strconv
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m processing dep: crypto/aes
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m checking: /opt/gopath/src/crypto/aes exists: false
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m processing dep: crypto/internal/cipherhw
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m checking: /opt/gopath/src/crypto/internal/cipherhw exists: false
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 04b[0m processing dep: crypto/sha256
+[36m2018-10-04 11:53:26.878 UTC [golang-platform] GetDeploymentPayload -> DEBU 04c[0m checking: /opt/gopath/src/crypto/sha256 exists: false
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 04d[0m processing dep: crypto/subtle
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 04e[0m checking: /opt/gopath/src/crypto/subtle exists: false
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 04f[0m processing dep: encoding/asn1
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 050[0m checking: /opt/gopath/src/encoding/asn1 exists: false
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 051[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:26.879 UTC [golang-platform] GetDeploymentPayload -> DEBU 052[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 053[0m processing dep: encoding/json
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 054[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 055[0m processing dep: strings
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 056[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 057[0m processing dep: unicode
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 058[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:26.880 UTC [golang-platform] GetDeploymentPayload -> DEBU 059[0m processing dep: syscall
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05a[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05b[0m processing dep: crypto
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05c[0m checking: /opt/gopath/src/crypto exists: false
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05d[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05e[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 05f[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:26.881 UTC [golang-platform] GetDeploymentPayload -> DEBU 060[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:26.882 UTC [golang-platform] GetDeploymentPayload -> DEBU 061[0m processing dep: instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:26.882 UTC [golang-platform] GetDeploymentPayload -> DEBU 062[0m checking: /opt/gopath/src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates exists: true
+[36m2018-10-04 11:53:26.882 UTC [golang-platform] GetDeploymentPayload -> DEBU 063[0m processing dep: math/rand
+[36m2018-10-04 11:53:26.882 UTC [golang-platform] GetDeploymentPayload -> DEBU 064[0m checking: /opt/gopath/src/math/rand exists: false
+[36m2018-10-04 11:53:26.882 UTC [golang-platform] GetDeploymentPayload -> DEBU 065[0m processing dep: internal/singleflight
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 066[0m checking: /opt/gopath/src/internal/singleflight exists: false
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 067[0m processing dep: net
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 068[0m checking: /opt/gopath/src/net exists: false
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 069[0m processing dep: runtime/cgo
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 06a[0m checking: /opt/gopath/src/runtime/cgo exists: false
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 06b[0m processing dep: encoding
+[36m2018-10-04 11:53:26.883 UTC [golang-platform] GetDeploymentPayload -> DEBU 06c[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 06d[0m processing dep: bufio
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 06e[0m checking: /opt/gopath/src/bufio exists: false
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 06f[0m processing dep: crypto/ecdsa
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 070[0m checking: /opt/gopath/src/crypto/ecdsa exists: false
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 071[0m processing dep: crypto/rsa
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 072[0m checking: /opt/gopath/src/crypto/rsa exists: false
+[36m2018-10-04 11:53:26.884 UTC [golang-platform] GetDeploymentPayload -> DEBU 073[0m processing dep: time
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 074[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 075[0m processing dep: crypto/md5
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 076[0m checking: /opt/gopath/src/crypto/md5 exists: false
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 077[0m processing dep: encoding/binary
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 078[0m checking: /opt/gopath/src/encoding/binary exists: false
+[36m2018-10-04 11:53:26.885 UTC [golang-platform] GetDeploymentPayload -> DEBU 079[0m processing dep: os
+[36m2018-10-04 11:53:26.886 UTC [golang-platform] GetDeploymentPayload -> DEBU 07a[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:26.886 UTC [golang-platform] GetDeploymentPayload -> DEBU 07b[0m processing dep: runtime
+[36m2018-10-04 11:53:26.886 UTC [golang-platform] GetDeploymentPayload -> DEBU 07c[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:26.886 UTC [golang-platform] GetDeploymentPayload -> DEBU 07d[0m processing dep: sort
+[36m2018-10-04 11:53:26.886 UTC [golang-platform] GetDeploymentPayload -> DEBU 07e[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 07f[0m processing dep: sync
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 080[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 081[0m processing dep: errors
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 082[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 083[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 084[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 085[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 086[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:26.887 UTC [golang-platform] GetDeploymentPayload -> DEBU 087[0m processing dep: math/bits
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 088[0m checking: /opt/gopath/src/math/bits exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 089[0m processing dep: math
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08a[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08b[0m processing dep: crypto/dsa
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08c[0m checking: /opt/gopath/src/crypto/dsa exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08d[0m processing dep: internal/poll
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08e[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 08f[0m processing dep: crypto/sha1
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 090[0m checking: /opt/gopath/src/crypto/sha1 exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 091[0m processing dep: crypto/sha512
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 092[0m checking: /opt/gopath/src/crypto/sha512 exists: false
+[36m2018-10-04 11:53:26.888 UTC [golang-platform] GetDeploymentPayload -> DEBU 093[0m processing dep: io/ioutil
+[36m2018-10-04 11:53:26.889 UTC [golang-platform] GetDeploymentPayload -> DEBU 094[0m checking: /opt/gopath/src/io/ioutil exists: false
+[36m2018-10-04 11:53:26.889 UTC [golang-platform] GetDeploymentPayload -> DEBU 095[0m done
+[36m2018-10-04 11:53:26.889 UTC [container] WriteFileToPackage -> DEBU 096[0m Writing file to tarball: src/instruction/instruction.go
+[36m2018-10-04 11:53:26.894 UTC [container] WriteFileToPackage -> DEBU 097[0m Writing file to tarball: src/instruction/instruction_test.go
+[36m2018-10-04 11:53:26.896 UTC [container] WriteFileToPackage -> DEBU 098[0m Writing file to tarball: src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates/certificates.go
+[36m2018-10-04 11:53:26.897 UTC [container] WriteFileToPackage -> DEBU 099[0m Writing file to tarball: src/instruction/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:26.899 UTC [msp/identity] Sign -> DEBU 09a[0m Sign: plaintext: 0A82070A5C08031A0C08B6FED7DD0510...F4FBFF010000FFFFCD54A2F700220100 
+[36m2018-10-04 11:53:26.900 UTC [msp/identity] Sign -> DEBU 09b[0m Sign: digest: DFCA4B10EFCB01DF7D25062C4E580E05D0689DB67410B01316C38BFC526D7161 
+[36m2018-10-04 11:53:26.912 UTC [chaincodeCmd] install -> DEBU 09c[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:26.912 UTC [main] main -> INFO 09d[0m Exiting.....
+*************************************************************************************************************
+Finished in 5 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+Install chaincode: nsd position 2.0
+*************************************************************************************************************
+installing chaincode position to peers of nsd from ./chaincode/go/position 2.0 using ./dockercompose/docker-compose-nsd.yaml
+*************************************************************************************************************
+docker-compose --file ./dockercompose/docker-compose-nsd.yaml run --rm "cli.nsd.nsd.ru" bash -c "CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode install -n position -v 2.0 -p position -l golang 
+ && CORE_PEER_ADDRESS=peer1.nsd.nsd.ru:7051 peer chaincode install -n position -v 2.0 -p position -l golang"
+[36m2018-10-04 11:53:30.731 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:30.732 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:30.732 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:30.732 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:30.732 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:30.802 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS position
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: position/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:31.073 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] func1 -> DEBU 00d[0m skipping dir: /opt/gopath/src/position/vendor
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 00e[0m processing dep: bytes
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m processing dep: internal/race
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 011[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 012[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m processing dep: time
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:31.187 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m processing dep: os
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m processing dep: unicode
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:31.188 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m processing dep: reflect
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m processing dep: strings
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m processing dep: sync
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:31.189 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m processing dep: syscall
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m processing dep: errors
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m processing dep: encoding/json
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m processing dep: math
+[36m2018-10-04 11:53:31.190 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m processing dep: strconv
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m processing dep: encoding
+[36m2018-10-04 11:53:31.191 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:31.192 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m processing dep: internal/poll
+[36m2018-10-04 11:53:31.192 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:31.192 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m processing dep: runtime
+[36m2018-10-04 11:53:31.193 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:31.193 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m processing dep: position/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:31.193 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m checking: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:31.194 UTC [golang-platform] func1 -> DEBU 03e[0m skipping dir: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:31.194 UTC [golang-platform] func1 -> DEBU 03f[0m skipping dir: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:31.194 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m processing dep: fmt
+[36m2018-10-04 11:53:31.194 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:31.194 UTC [golang-platform] GetDeploymentPayload -> DEBU 042[0m processing dep: io
+[36m2018-10-04 11:53:31.195 UTC [golang-platform] GetDeploymentPayload -> DEBU 043[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:31.195 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m processing dep: sort
+[36m2018-10-04 11:53:31.195 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:31.195 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:31.196 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:31.196 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m processing dep: unsafe
+[36m2018-10-04 11:53:31.196 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:31.196 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m done
+[36m2018-10-04 11:53:31.196 UTC [container] WriteFileToPackage -> DEBU 04b[0m Writing file to tarball: src/position/position.go
+[36m2018-10-04 11:53:31.200 UTC [container] WriteFileToPackage -> DEBU 04c[0m Writing file to tarball: src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:31.202 UTC [msp/identity] Sign -> DEBU 04d[0m Sign: plaintext: 0A81070A5B08031A0B08BBFED7DD0510...A7F6EF000000FFFFE5C0561E00420000 
+[36m2018-10-04 11:53:31.202 UTC [msp/identity] Sign -> DEBU 04e[0m Sign: digest: 45F2C6047E63C1D2E7F7D115FF954F782556324663A6E0BE7DDB82247B1B5B8A 
+[36m2018-10-04 11:53:31.218 UTC [chaincodeCmd] install -> DEBU 04f[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:31.218 UTC [main] main -> INFO 050[0m Exiting.....
+[36m2018-10-04 11:53:31.315 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:31.315 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:31.315 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:31.315 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:31.315 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:31.386 UTC [golang-platform] getCodeFromFS -> DEBU 006[0m getCodeFromFS position
+[36m2018-10-04 11:53:31.629 UTC [golang-platform] func1 -> DEBU 007[0m Discarding GOROOT package encoding/json
+[36m2018-10-04 11:53:31.629 UTC [golang-platform] func1 -> DEBU 008[0m Discarding GOROOT package fmt
+[36m2018-10-04 11:53:31.629 UTC [golang-platform] func1 -> DEBU 009[0m Accepting import: position/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:31.629 UTC [golang-platform] func1 -> DEBU 00a[0m Discarding provided package github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:31.629 UTC [golang-platform] func1 -> DEBU 00b[0m Discarding provided package github.com/hyperledger/fabric/protos/peer
+[36m2018-10-04 11:53:31.630 UTC [golang-platform] func1 -> DEBU 00c[0m Discarding GOROOT package time
+[36m2018-10-04 11:53:31.738 UTC [golang-platform] func1 -> DEBU 00d[0m skipping dir: /opt/gopath/src/position/vendor
+[36m2018-10-04 11:53:31.738 UTC [golang-platform] GetDeploymentPayload -> DEBU 00e[0m processing dep: os
+[36m2018-10-04 11:53:31.739 UTC [golang-platform] GetDeploymentPayload -> DEBU 00f[0m checking: /opt/gopath/src/os exists: false
+[36m2018-10-04 11:53:31.739 UTC [golang-platform] GetDeploymentPayload -> DEBU 010[0m processing dep: unicode
+[36m2018-10-04 11:53:31.740 UTC [golang-platform] GetDeploymentPayload -> DEBU 011[0m checking: /opt/gopath/src/unicode exists: false
+[36m2018-10-04 11:53:31.740 UTC [golang-platform] GetDeploymentPayload -> DEBU 012[0m processing dep: unicode/utf16
+[36m2018-10-04 11:53:31.741 UTC [golang-platform] GetDeploymentPayload -> DEBU 013[0m checking: /opt/gopath/src/unicode/utf16 exists: false
+[36m2018-10-04 11:53:31.741 UTC [golang-platform] GetDeploymentPayload -> DEBU 014[0m processing dep: sort
+[36m2018-10-04 11:53:31.742 UTC [golang-platform] GetDeploymentPayload -> DEBU 015[0m checking: /opt/gopath/src/sort exists: false
+[36m2018-10-04 11:53:31.742 UTC [golang-platform] GetDeploymentPayload -> DEBU 016[0m processing dep: encoding
+[36m2018-10-04 11:53:31.743 UTC [golang-platform] GetDeploymentPayload -> DEBU 017[0m checking: /opt/gopath/src/encoding exists: false
+[36m2018-10-04 11:53:31.743 UTC [golang-platform] GetDeploymentPayload -> DEBU 018[0m processing dep: encoding/json
+[36m2018-10-04 11:53:31.744 UTC [golang-platform] GetDeploymentPayload -> DEBU 019[0m checking: /opt/gopath/src/encoding/json exists: false
+[36m2018-10-04 11:53:31.744 UTC [golang-platform] GetDeploymentPayload -> DEBU 01a[0m processing dep: math
+[36m2018-10-04 11:53:31.745 UTC [golang-platform] GetDeploymentPayload -> DEBU 01b[0m checking: /opt/gopath/src/math exists: false
+[36m2018-10-04 11:53:31.745 UTC [golang-platform] GetDeploymentPayload -> DEBU 01c[0m processing dep: runtime/internal/sys
+[36m2018-10-04 11:53:31.746 UTC [golang-platform] GetDeploymentPayload -> DEBU 01d[0m checking: /opt/gopath/src/runtime/internal/sys exists: false
+[36m2018-10-04 11:53:31.746 UTC [golang-platform] GetDeploymentPayload -> DEBU 01e[0m processing dep: runtime
+[36m2018-10-04 11:53:31.747 UTC [golang-platform] GetDeploymentPayload -> DEBU 01f[0m checking: /opt/gopath/src/runtime exists: false
+[36m2018-10-04 11:53:31.747 UTC [golang-platform] GetDeploymentPayload -> DEBU 020[0m processing dep: sync/atomic
+[36m2018-10-04 11:53:31.747 UTC [golang-platform] GetDeploymentPayload -> DEBU 021[0m checking: /opt/gopath/src/sync/atomic exists: false
+[36m2018-10-04 11:53:31.748 UTC [golang-platform] GetDeploymentPayload -> DEBU 022[0m processing dep: syscall
+[36m2018-10-04 11:53:31.748 UTC [golang-platform] GetDeploymentPayload -> DEBU 023[0m checking: /opt/gopath/src/syscall exists: false
+[36m2018-10-04 11:53:31.748 UTC [golang-platform] GetDeploymentPayload -> DEBU 024[0m processing dep: bytes
+[36m2018-10-04 11:53:31.749 UTC [golang-platform] GetDeploymentPayload -> DEBU 025[0m checking: /opt/gopath/src/bytes exists: false
+[36m2018-10-04 11:53:31.749 UTC [golang-platform] GetDeploymentPayload -> DEBU 026[0m processing dep: encoding/base64
+[36m2018-10-04 11:53:31.749 UTC [golang-platform] GetDeploymentPayload -> DEBU 027[0m checking: /opt/gopath/src/encoding/base64 exists: false
+[36m2018-10-04 11:53:31.749 UTC [golang-platform] GetDeploymentPayload -> DEBU 028[0m processing dep: github.com/hyperledger/fabric/core/chaincode/shim
+[36m2018-10-04 11:53:31.750 UTC [golang-platform] GetDeploymentPayload -> DEBU 029[0m checking: /opt/gopath/src/github.com/hyperledger/fabric/core/chaincode/shim exists: false
+[36m2018-10-04 11:53:31.750 UTC [golang-platform] GetDeploymentPayload -> DEBU 02a[0m processing dep: io
+[36m2018-10-04 11:53:31.750 UTC [golang-platform] GetDeploymentPayload -> DEBU 02b[0m checking: /opt/gopath/src/io exists: false
+[36m2018-10-04 11:53:31.751 UTC [golang-platform] GetDeploymentPayload -> DEBU 02c[0m processing dep: errors
+[36m2018-10-04 11:53:31.751 UTC [golang-platform] GetDeploymentPayload -> DEBU 02d[0m checking: /opt/gopath/src/errors exists: false
+[36m2018-10-04 11:53:31.751 UTC [golang-platform] GetDeploymentPayload -> DEBU 02e[0m processing dep: unsafe
+[36m2018-10-04 11:53:31.752 UTC [golang-platform] GetDeploymentPayload -> DEBU 02f[0m checking: /opt/gopath/src/unsafe exists: false
+[36m2018-10-04 11:53:31.752 UTC [golang-platform] GetDeploymentPayload -> DEBU 030[0m processing dep: internal/cpu
+[36m2018-10-04 11:53:31.752 UTC [golang-platform] GetDeploymentPayload -> DEBU 031[0m checking: /opt/gopath/src/internal/cpu exists: false
+[36m2018-10-04 11:53:31.752 UTC [golang-platform] GetDeploymentPayload -> DEBU 032[0m processing dep: internal/poll
+[36m2018-10-04 11:53:31.753 UTC [golang-platform] GetDeploymentPayload -> DEBU 033[0m checking: /opt/gopath/src/internal/poll exists: false
+[36m2018-10-04 11:53:31.753 UTC [golang-platform] GetDeploymentPayload -> DEBU 034[0m processing dep: internal/race
+[36m2018-10-04 11:53:31.753 UTC [golang-platform] GetDeploymentPayload -> DEBU 035[0m checking: /opt/gopath/src/internal/race exists: false
+[36m2018-10-04 11:53:31.753 UTC [golang-platform] GetDeploymentPayload -> DEBU 036[0m processing dep: runtime/internal/atomic
+[36m2018-10-04 11:53:31.753 UTC [golang-platform] GetDeploymentPayload -> DEBU 037[0m checking: /opt/gopath/src/runtime/internal/atomic exists: false
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 038[0m processing dep: fmt
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 039[0m checking: /opt/gopath/src/fmt exists: false
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 03a[0m processing dep: reflect
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 03b[0m checking: /opt/gopath/src/reflect exists: false
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 03c[0m processing dep: strings
+[36m2018-10-04 11:53:31.754 UTC [golang-platform] GetDeploymentPayload -> DEBU 03d[0m checking: /opt/gopath/src/strings exists: false
+[36m2018-10-04 11:53:31.755 UTC [golang-platform] GetDeploymentPayload -> DEBU 03e[0m processing dep: unicode/utf8
+[36m2018-10-04 11:53:31.755 UTC [golang-platform] GetDeploymentPayload -> DEBU 03f[0m checking: /opt/gopath/src/unicode/utf8 exists: false
+[36m2018-10-04 11:53:31.755 UTC [golang-platform] GetDeploymentPayload -> DEBU 040[0m processing dep: position/vendor/github.com/Altoros/nsd-commercial-paper-common
+[36m2018-10-04 11:53:31.755 UTC [golang-platform] GetDeploymentPayload -> DEBU 041[0m checking: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common exists: true
+[36m2018-10-04 11:53:31.756 UTC [golang-platform] func1 -> DEBU 042[0m skipping dir: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/certificates
+[36m2018-10-04 11:53:31.756 UTC [golang-platform] func1 -> DEBU 043[0m skipping dir: /opt/gopath/src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/testutils
+[36m2018-10-04 11:53:31.756 UTC [golang-platform] GetDeploymentPayload -> DEBU 044[0m processing dep: sync
+[36m2018-10-04 11:53:31.756 UTC [golang-platform] GetDeploymentPayload -> DEBU 045[0m checking: /opt/gopath/src/sync exists: false
+[36m2018-10-04 11:53:31.757 UTC [golang-platform] GetDeploymentPayload -> DEBU 046[0m processing dep: strconv
+[36m2018-10-04 11:53:31.757 UTC [golang-platform] GetDeploymentPayload -> DEBU 047[0m checking: /opt/gopath/src/strconv exists: false
+[36m2018-10-04 11:53:31.757 UTC [golang-platform] GetDeploymentPayload -> DEBU 048[0m processing dep: time
+[36m2018-10-04 11:53:31.757 UTC [golang-platform] GetDeploymentPayload -> DEBU 049[0m checking: /opt/gopath/src/time exists: false
+[36m2018-10-04 11:53:31.757 UTC [golang-platform] GetDeploymentPayload -> DEBU 04a[0m done
+[36m2018-10-04 11:53:31.757 UTC [container] WriteFileToPackage -> DEBU 04b[0m Writing file to tarball: src/position/position.go
+[36m2018-10-04 11:53:31.761 UTC [container] WriteFileToPackage -> DEBU 04c[0m Writing file to tarball: src/position/vendor/github.com/Altoros/nsd-commercial-paper-common/nsd.go
+[36m2018-10-04 11:53:31.764 UTC [msp/identity] Sign -> DEBU 04d[0m Sign: plaintext: 0A82070A5C08031A0C08BBFED7DD0510...A7F6EF000000FFFFE5C0561E00420000 
+[36m2018-10-04 11:53:31.764 UTC [msp/identity] Sign -> DEBU 04e[0m Sign: digest: AC0A772A08F1884A63B799A2C48036287DF7D3B48F962E6860A0118B05693DF5 
+[36m2018-10-04 11:53:31.773 UTC [chaincodeCmd] install -> DEBU 04f[0m Installed remotely response:<status:200 payload:"OK" > 
+2018-10-04 11:53:31.774 UTC [main] main -> INFO 050[0m Exiting.....
+*************************************************************************************************************
+Finished in 4 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+****************************************************************************
+nsd book depository {"Args":["init","{\"mainOrg\":\"nsd.nsd.ru\",\"initEntries\":[]}"]}
+*************************************************************************************************************
+instantiating chaincode book on depository by nsd using ./dockercompose/docker-compose-nsd.yaml with {"Args":["init","{\"mainOrg\":\"nsd.nsd.ru\",\"initEntries\":[]}"]}
+*************************************************************************************************************
+instantiating with cli.nsd.nsd.ru by CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode instantiate -n book -v 2.0 -c '{"Args":["init","{\"mainOrg\":\"nsd.nsd.ru\",\"initEntries\":[]}"]}' -o orderer.nsd.ru:7050 -C depository --tls --cafile /etc/hyperledger/crypto/orderer/tls/ca.crt
+[36m2018-10-04 11:53:34.616 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:34.616 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:34.626 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:34.626 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:34.627 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:34.628 UTC [msp/identity] Sign -> DEBU 006[0m Sign: plaintext: 0A8E070A6808031A0C08BEFED7DD0510...5D7D0A000A04657363630A0476736363 
+[36m2018-10-04 11:53:34.628 UTC [msp/identity] Sign -> DEBU 007[0m Sign: digest: 9C1CD58BEAD5584AE33F922E736016B51AE1D506E9E294DE88CF2131CFAF0FDD 
+[36m2018-10-04 11:53:51.105 UTC [msp/identity] Sign -> DEBU 008[0m Sign: plaintext: 0A8E070A6808031A0C08BEFED7DD0510...48EB5EC9C5235220AE92B48EE918B1D9 
+[36m2018-10-04 11:53:51.106 UTC [msp/identity] Sign -> DEBU 009[0m Sign: digest: 51884E5E6F0FCC55F145CA071E9057B71FFA147720E8C8A1058443B0196F2B52 
+2018-10-04 11:53:51.117 UTC [main] main -> INFO 00a[0m Exiting.....
+*************************************************************************************************************
+Finished in 19 seconds
+*************************************************************************************************************
+Use Fabric-Starter home: /home/ilya/temp
+Use docker compose template folder: /home/ilya/temp/docker-compose-templates
+Use target artifact folder: ./artifacts
+Use target docker-compose folder: ./dockercompose
+****************************************************************************
+nsd security common {"Args":["init","[{\"security\":\"RUB\",\"status\":\"active\",\"redeem\":{\"account\":\"\",\"division\":\"\"}}]"]}
+*************************************************************************************************************
+instantiating chaincode security on common by nsd using ./dockercompose/docker-compose-nsd.yaml with {"Args":["init","[{\"security\":\"RUB\",\"status\":\"active\",\"redeem\":{\"account\":\"\",\"division\":\"\"}}]"]}
+*************************************************************************************************************
+instantiating with cli.nsd.nsd.ru by CORE_PEER_ADDRESS=peer0.nsd.nsd.ru:7051 peer chaincode instantiate -n security -v 2.0 -c '{"Args":["init","[{\"security\":\"RUB\",\"status\":\"active\",\"redeem\":{\"account\":\"\",\"division\":\"\"}}]"]}' -o orderer.nsd.ru:7050 -C common --tls --cafile /etc/hyperledger/crypto/orderer/tls/ca.crt
+[36m2018-10-04 11:53:53.788 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2018-10-04 11:53:53.789 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2018-10-04 11:53:53.796 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2018-10-04 11:53:53.797 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2018-10-04 11:53:53.798 UTC [chaincodeCmd] getChaincodeSpec -> DEBU 005[0m java chaincode disabled
+[36m2018-10-04 11:53:53.799 UTC [msp/identity] Sign -> DEBU 006[0m Sign: plaintext: 0A8A070A6408031A0C08D1FED7DD0510...7D5D0A000A04657363630A0476736363 
+[36m2018-10-04 11:53:53.799 UTC [msp/identity] Sign -> DEBU 007[0m Sign: digest: 30A31AF37D9D8B3B828D0BEF33DFB4F53613CFAB2893C74EBC2697EDD14C7843 
+[36m2018-10-04 11:54:09.661 UTC [msp/identity] Sign -> DEBU 008[0m Sign: plaintext: 0A8A070A6408031A0C08D1FED7DD0510...36701E2F01427E5C18F2521B361561A8 
+[36m2018-10-04 11:54:09.661 UTC [msp/identity] Sign -> DEBU 009[0m Sign: digest: 5944E305CD286C320AC61B5965D48B841D3EC2EDADA5CAC4ED5F8FF6A122E826 
+2018-10-04 11:54:09.672 UTC [main] main -> INFO 00a[0m Exiting.....
+*************************************************************************************************************
+Finished in 19 seconds
+*************************************************************************************************************
+
+ >> Org 'nsd' is up. Channels 'common', 'depository' are created. New organizations may be added by using 'main-register-new-org.sh'

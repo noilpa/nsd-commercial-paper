@@ -1,0 +1,105 @@
+{
+  "payload": {
+    "header": {
+      "channel_header": {
+        "channel_id": "common",
+        "type": 2
+      }
+    },
+    "data": {
+      "config_update": {
+        "channel_id": "common",
+        "read_set": {
+          "groups": {
+            "Application": {
+              "groups": {
+                "nsdMSP": {
+                  "mod_policy": "",
+                  "version": "0"
+                }
+              },
+              "mod_policy": "",
+              "policies": {
+                "Admins": {
+                  "mod_policy": "",
+                  "version": "0"
+                },
+                "Readers": {
+                  "mod_policy": "",
+                  "version": "0"
+                },
+                "Writers": {
+                  "mod_policy": "",
+                  "version": "0"
+                }
+              },
+              "version": "1"
+            }
+          },
+          "mod_policy": "",
+          "version": "0"
+        },
+        "type": 0,
+        "write_set": {
+          "groups": {
+            "Application": {
+              "groups": {
+                "nsdMSP": {
+                  "mod_policy": "",
+                  "version": "0"
+                }
+              },
+              "mod_policy": "nsdOnly",
+              "policies": {
+                "Admins": {
+                  "mod_policy": "",
+                  "version": "0"
+                },
+                "Readers": {
+                  "mod_policy": "",
+                  "version": "0"
+                },
+                "Writers": {
+                  "mod_policy": "",
+                  "version": "0"
+                },
+                "nsdOnly": {
+                  "mod_policy": "Admins",
+                  "policy": {
+                    "type": 1,
+                    "value": {
+                      "identities": [
+                        {
+                          "principal": {
+                            "msp_identifier": "nsdMSP",
+                            "role": "ADMIN"
+                          },
+                          "principal_classification": "ROLE"
+                        }
+                      ],
+                      "rule": {
+                        "n_out_of": {
+                          "n": 1,
+                          "rules": [
+                            {
+                              "signed_by": 0
+                            }
+                          ]
+                        }
+                      },
+                      "version": 0
+                    }
+                  },
+                  "version": "0"
+                }
+              },
+              "version": "2"
+            }
+          },
+          "mod_policy": "",
+          "version": "0"
+        }
+      }
+    }
+  }
+}
