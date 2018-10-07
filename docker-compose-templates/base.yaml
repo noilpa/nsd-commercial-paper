@@ -30,7 +30,6 @@ services:
     command: peer node start
     volumes:
       - /var/run/:/host/var/run/
-  
 
 #  couchdb-base:
 #    image: hyperledger/fabric-couchdb:x86_64-1.1.0-alpha
@@ -54,7 +53,6 @@ services:
       - ../chaincode/go:/opt/gopath/src
     working_dir: /etc/hyperledger/artifacts
 
-
   api-base:
 #    build: ../server
 #    image: altoros/fabric-rest
@@ -63,16 +61,7 @@ services:
      - ../artifacts:/usr/src/artifacts
     command: sh -c "npm start"
 
-
   www-base:
     image: nginx
     volumes:
       - ../www/artifacts:/usr/share/nginx/html
-
-networks:
-  my_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 1.10.0.0/24
-

@@ -20,6 +20,8 @@ echo "THIS_ORG: $THIS_ORG"
 ./network.sh -m generate-orderer -M $THIS_ORG
 ./network.sh -m up-orderer
 
+./network.sh -m addOrgsToCliHosts -o $THIS_ORG
+
 ./network.sh -m up-one-org -o $THIS_ORG -M $THIS_ORG -k common
 ./network.sh -m update-sign-policy -o $THIS_ORG -k common
 

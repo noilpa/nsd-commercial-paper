@@ -3,6 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+#intended to easy overwrite base.yaml's configuration in derived projects
+
 version: '2'
 services:
   peer-base:
@@ -15,26 +17,13 @@ services:
       file: base.yaml
       service: cli-base
 
+
   api-base:
     extends:
       file: base.yaml
       service: api-base
-    volumes:
-     - ../middleware:/usr/src/app/middleware
-     - ../www:/usr/src/app/www
-     - ../www/images:/usr/src/app/www-admin/images
-     - ../instruction_init.json:/usr/src/app/instruction_init.json
 
   www-base:
     extends:
       file: base.yaml
       service: www-base
-
-networks:
-  my_network:
-    driver: bridge
-    ipam:
-      config:
-        - subnet: 1.10.0.0/24
-
-

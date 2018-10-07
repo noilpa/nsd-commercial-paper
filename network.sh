@@ -669,13 +669,14 @@ function downloadArtifactsMember() {
   #TODO download not from all members but from the orderer
   info "downloading member cert files using $f"
 
-  c="for ORG in ${ORG1} ${ORG2} ${ORG3}; do wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls http://www.\${ORG}.$DOMAIN:$DEFAULT_WWW_PORT_HOST/crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls/ca.crt; done"
+  #c="for ORG in ${ORG1} ${ORG2} ${ORG3}; do wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls http://www.\${ORG}.$DOMAIN:$DEFAULT_WWW_PORT_HOST/crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls/ca.crt; done"
+  c="for ORG in ${ORG1} ${ORG2} ${ORG3}; do wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls http://www.\${ORG}.$DOMAIN:$DEFAULT_WWW_PORT_HOST/crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls/ca.crt; wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls http://www.\${ORG}.$DOMAIN:$DEFAULT_WWW_PORT/crypto-config/peerOrganizations/\${ORG}.$DOMAIN/peers/peer0.\${ORG}.$DOMAIN/tls/ca.crt; done"
   echo ${c}
   docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c} && chown -R $UID:$GID ."
 
   if [ -n "$remoteOrg" ]; then
     makeCertDirs $remoteOrg
-    c="wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/${remoteOrg}.$DOMAIN/peers/peer0.${remoteOrg}.$DOMAIN/tls http://www.${remoteOrg}.$DOMAIN:$DEFAULT_WWW_PORT_HOST/crypto-config/peerOrganizations/${remoteOrg}.$DOMAIN/peers/peer0.${remoteOrg}.$DOMAIN/tls/ca.crt"
+    c="wget ${WGET_OPTS} --directory-prefix crypto-config/peerOrganizations/${remoteOrg}.$DOMAIN/peers/peer0.${remoteOrg}.$DOMAIN/tls http://www.${remoteOrg}.$DOMAIN:$DEFAULT_WWW_PORT/crypto-config/peerOrganizations/${remoteOrg}.$DOMAIN/peers/peer0.${remoteOrg}.$DOMAIN/tls/ca.crt"
     echo ${c}
 
     docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c} && chown -R $UID:$GID ."
@@ -1129,6 +1130,15 @@ function printHelp () {
   echo "	network.sh -m down"
 }
 
+function addOrgsToCliHosts() {
+  org=$1 
+  addOrgToCliHosts $ORG orderer 10.50.154.3
+  addOrgToCliHosts $ORG www 10.50.154.3
+  addOrgToCliHosts $ORG www.nsd 10.50.154.3
+  addOrgToCliHosts $ORG www.sberbank 10.50.154.4
+  addOrgToCliHosts $ORG www.mts 10.50.154.5
+}
+
 # Parse commandline args
 while getopts "h?m:o:a:w:c:0:1:2:3:k:v:i:n:M:I:R:P:" opt; do
   case "$opt" in
@@ -1385,6 +1395,8 @@ elif [ "${MODE}" == "iterateChannels" ]; then
   iterateChannels
 elif [ "${MODE}" == "removeArtifacts" ]; then
   removeArtifacts
+elif [ "${MODE}" == "addOrgsToCliHosts" ]; then
+  addOrgsToCliHosts ${ORG}
 elif [ "${MODE}" == "generateNetworkConfig" ]; then
   [[ -z "$3" ]] && generateNetworkConfig ${ORG1} ${ORG2} ${ORG3}
   [[ -n "$3" ]] && generateNetworkConfig ${@:3}
