@@ -608,9 +608,11 @@ function downloadNetworkConfig() {
 
     info "downloading network config file using $f"
 
-    c="wget ${WGET_OPTS} http://www.${mainOrgDomain}$DOMAIN:$DEFAULT_WWW_PORT_HOST/network-config.json && chown -R $UID:$GID ."
+    # use DEFAULT_WWW_PORT for remote node
+    c="wget ${WGET_OPTS} http://www.${mainOrgDomain}$DOMAIN:$DEFAULT_WWW_PORT/network-config.json && chown -R $UID:$GID ."
     echo ${c}
     docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c}"
+
 }
 
 function downloadChannelTxFiles() {
@@ -637,14 +639,14 @@ function downloadChannelBlockFile() {
 
     info "downloading channel block file of created $channel_name from $DOMAIN and $leader using $f"
 
+    # use DEFAULT_WWW_PORT for remote node
    # c="wget ${WGET_OPTS} http://www.$DOMAIN:$DEFAULT_WWW_PORT/$channel_name.block && chown -R $UID:$GID ."
-    c="wget ${WGET_OPTS} http://www.$DOMAIN\:$DEFAULT_WWW_PORT_HOST/$channel_name.block && chown -R $UID:$GID ."
+    c="wget ${WGET_OPTS} http://www.$DOMAIN\:$DEFAULT_WWW_PORT/$channel_name.block && chown -R $UID:$GID ."
     echo ${c}
     docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c}"
 
-    #workaround until orderer-based network is implemented
-   # c="wget ${WGET_OPTS} http://www.$leader.$DOMAIN:$DEFAULT_WWW_PORT/$channel_name.block && chown -R $UID:$GID ."
-    c="wget ${WGET_OPTS} http://www.$leader.$DOMAIN:$DEFAULT_WWW_PORT_HOST/$channel_name.block && chown -R $UID:$GID ."
+    c="wget ${WGET_OPTS} http://www.$leader.$DOMAIN:$DEFAULT_WWW_PORT/$channel_name.block && chown -R $UID:$GID ."
+    # c="wget ${WGET_OPTS} http://www.$leader.$DOMAIN:$DEFAULT_WWW_PORT_HOST/$channel_name.block && chown -R $UID:$GID ."
     echo ${c}
     docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c}"
 }
@@ -662,7 +664,8 @@ function downloadArtifactsMember() {
 
   info "downloading orderer cert file using $f"
 
-  c="wget ${WGET_OPTS} --directory-prefix crypto-config/ordererOrganizations/$DOMAIN/orderers/orderer.$DOMAIN/tls http://www.$DOMAIN:$DEFAULT_WWW_PORT_HOST/crypto-config/ordererOrganizations/$DOMAIN/orderers/orderer.$DOMAIN/tls/ca.crt"
+  # use DEFAULT_WWW_PORT for remote node
+  c="wget ${WGET_OPTS} --directory-prefix crypto-config/ordererOrganizations/$DOMAIN/orderers/orderer.$DOMAIN/tls http://www.$DOMAIN:$DEFAULT_WWW_PORT/crypto-config/ordererOrganizations/$DOMAIN/orderers/orderer.$DOMAIN/tls/ca.crt"
   echo ${c}
   docker-compose --file ${f} run --rm "cli.$org.$DOMAIN" bash -c "${c} && chown -R $UID:$GID ."
 
