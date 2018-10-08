@@ -4,6 +4,9 @@
 # Start
 ###########################################################################
 network.sh -m add-org-connectivity -o $THIS_ORG -M $MAIN_ORG -R $MAIN_ORG -i ${IP1}
+
+network.sh -m addOrgsToCliHosts -o $THIS_ORG
+
 network.sh -m up-one-org -o $THIS_ORG -M $MAIN_ORG
 
 

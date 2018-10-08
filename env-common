@@ -13,6 +13,7 @@ export IP3=10.50.154.5
 FABRIC_STARTER_HOME:=.
 export FABRIC_STARTER_HOME
 export PATH=$FABRIC_STARTER_HOME/:$PATH
+export PATH=$PATH:.
 
 
 echo -e "Set environment for blockchain deployment:\nFABRIC_STARTER_HOME:$FABRIC_STARTER_HOME\nMain org:$MAIN_ORG"
