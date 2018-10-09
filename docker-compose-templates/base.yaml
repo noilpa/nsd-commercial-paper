@@ -59,6 +59,13 @@ services:
     image: maxxx1313/fabric-rest
     volumes:
      - ../artifacts:/usr/src/artifacts
+     - ../instruction_init.json:/usr/src/app/instruction_init.json
+     - ../instruction_init.json:/usr/src/app/middleware/instruction_init.json
+     - ../instruction_init.json:/usr/src/app/www/instruction_init.json
+     - ../instruction_init.json:/usr/src/instruction_init.json
+     - ../www:/usr/src/app/www
+     - ../middleware:/usr/src/app/middleware
+
     command: sh -c "npm start"
 
   www-base:

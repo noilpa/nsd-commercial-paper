@@ -4,5 +4,3 @@ fe00::0	ip6-localnet
 ff00::0	ip6-mcastprefix
 ff02::1	ip6-allnodes
 ff02::2	ip6-allrouters
-10.50.154.4 peer0.sberbank.nsd.ru peer1.sberbank.nsd.ru
-10.50.154.5 peer0.mts.nsd.ru peer1.mts.nsd.ru
