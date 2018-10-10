@@ -1,236 +1,447 @@
-# Starter Application for Hyperledger Fabric 1.1
+# Commercial Paper on Blockchain for NSD v2 
 
-Create a network to jump start development of your decentralized application.
+Decentralized application manages instructions to transfer securities between members of NSD.
 
-The network can be deployed to multiple docker containers on one host for development or to multiple hosts for testing 
-or production.
 
-Scripts of this starter generate crypto material and config files, start the network and deploy your chaincodes. 
-Developers can use admin web app of 
-[REST API server](https://github.com/Altoros/fabric-rest/tree/master/server/www-admin) 
-to invoke and query chaincodes, explore blocks and transactions.
 
-What's left is to develop your chaincodes and place them into the [chaincode](./chaincode) folder, 
-and user interface as a single page web app that you can serve by by placing the sources into the [www](./www) folder. 
-You can take web app code or follow patterns of the 
-[admin app](https://github.com/Altoros/fabric-rest/tree/master/server/www-admin) to enroll users, 
-invoke chaincodes and subscribe to events.
 
-Most of the plumbing work is taken care of by this starter.
 
-## Members and Components
+## Install prerequisites
 
-Network consortium consists of:
-
-- Orderer organization `example.com`
-- Peer organization org1 `a` 
-- Peer organization org2 `b` 
-- Peer organization org3 `c`
-
-They transact with each other on the following channels:
-
-- `common` involving all members and with chaincode `reference` deployed
-- bilateral confidential channels between pairs of members with chaincode `relationship` deployed to them
-  - `a-b`
-  - `a-c`
-  - `b-c`
-
-Both chaincodes are copies of [chaincode_example02](https://github.com/hyperledger/fabric/tree/release/examples/chaincode/go/chaincode_example02).
-Replace these sources with your own.
-
-Each organization starts several docker containers:
-
-- **peer0** (ex.: `peer0.a.example.com`) with the anchor [peer](https://github.com/hyperledger/fabric/tree/release/peer) runtime
-- **peer1** `peer1.a.example.com` with the secondary peer
-- **ca** `ca.a.example.com` with certificate authority server [fabri-ca](https://github.com/hyperledger/fabric-ca)
-- **api** `api.a.example.com` with [fabric-rest](https://github.com/Altoros/fabric-rest) API server
-- **www** `www.a.example.com` with a simple http server to serve members' certificate files during artifacts generation and setup
-- **cli** `cli.a.example.com` with tools to run commands during setup
-
-## Local deployment
-
-Deploy docker containers of all member organizations to one host, for development and testing of functionality. 
-
-All containers refer to each other by their domain names and connect via the host's docker network. The only services 
-that need to be available to the host machine are the `api` so you can connect to admin web apps of each member; 
-thus their `4000` ports are mapped to non conflicting `4000, 4001, 4002` ports on the host.
-
-Generate artifacts:
+- Clone Nsd Commercial Paper delivery packages from github:  
 ```bash
-./network.sh -m generate
+git clone --recursive https://github.com/Altoros/NSD
+cd NSD
+cp -Rf nsd-commercial-paper/. fabric-starter/ 
+cd fabric-starter/
+export PATH=$PATH:.
+./prerequisites-deployment.sh
+cd ..
 ```
 
-Generated crypto material of all members, block and tx files are placed in shared `artifacts` folder on the host.
 
-Start docker containers of all members:
+On other Linux distros make sure these versions or higher are installed:  
+
+* Docker version 17.12.1
+* docker-compose version 1.8.0
+* jq
+
+To install them on Ubuntu 16.04 you nay use the following commands:  
+
 ```bash
-./network.sh -m up
+cd fabric-starter
+./init-docker.sh
 ```
 
-After all containers are up, browse to each member's admin web app to transact on their behalf: 
 
-- org1 [http://localhost:4000/admin](http://localhost:4000/admin)
-- org2 [http://localhost:4001/admin](http://localhost:4001/admin)
-- org3 [http://localhost:4002/admin](http://localhost:4002/admin)
+**Now re-login to have user applied into docker group.**  
 
-Tail logs of each member's docker containers by passing its name as organization `-o` argument:
-```bash
-# orderer
-./network.sh -m logs -m example.com
 
-# members
-./network.sh -m logs -m a
-./network.sh -m logs -m b
-```
-Stop all:
+Next execute in console:   
 ```bash
-./network.sh -m down
-```
-Remove dockers:
-```bash
-./network.sh -m clean
+cd fabric-starter
+./init-fabric.sh
 ```
 
-## Decentralized deployment
 
-Deploy containers of each member to separate hosts connecting via internet.
+## Configuration
 
-Note the docker-compose files don't change much from the local deployment and containers still refer to each other by 
-domain names `api.a.example.com`, `peer1.c.example.com` etc. However they can no longer discover each other within a local
-docker network and need to resolve these names to real ips on the internet. We use `extra_hosts` setting in docker-compose 
-files to map domain names to real ips which come as args to the script. Specify member hosts ip addresses 
-in [network.sh](network.sh) file or by env variables:
+For initial deployment the following organizations are used:
+- `ORG1` – nsd
+- `ORG2` – sberbank 
+- `ORG3` – mts
+
+and the corresponded IP addresses:
+- `IP1=XX.XX.XX.XX` - NSD node's IP
+- `IP2=YY.YY.YY.YY` - Sberbank node's IP
+- `IP3=ZZ.ZZ.ZZ.ZZ` - MTS node's IP
+ 
+Make sure these IP and names were added to /etc/hosts
+XX.XX.XX.XX www.nsd.nsd.ru
+YY.YY.YY.YY www.sberbank.nsd.ru
+ZZ.ZZ.ZZ.ZZ www.mts.nsd.ru
+
+In Commercial Paper v2 installation NSD serves as `MAIN_NODE` which is configured as environment variable exported in files *env-common*.
+Other memebers are defined as `THIS_ORG` variable set correspondingly in *env-org-<org-name>* files.
+
+Check initial configuration or reconfigure organization names, and IP-addresses in configuration files: 
+
+Folder **nsd-commercial-paper**:
+-	*env-common*
+-	*env-org-sberbank*
+-	*env-org-mts*  
+
+In these files the common variables and the current organization configuration are defined. 
+The configuration specific variables are - `THIS_ORG`, `MAIN_ORG`, `IP_ORDERER`. 
+ 
+
+as well as initialization arguments for blockhains :
+-	*instruction_init.json*
+-	*book_init.json*
+-	*security_init.json*
+
+## Deployment:
+
+At first each member has to generate their crypto material; 
+it then will be exposed by http interface on port `8080` to be accessible by the other organizations: 
+
+
+1.	Sberbank:  
 ```bash
-export IP_ORDERER=54.235.3.243 IP1=54.235.3.231 IP2=54.235.3.232 IP3=54.235.3.233
-```  
-
-The setup process takes several steps whose order is important.
-
-Each member generates artifacts on their respective hosts (can be done in parallel):
-```bash
-# organization a on their host
-./network.sh -m generate-peer -o a
-
-# organization b on their host
-./network.sh -m generate-peer -o b
-
-# organization c on their host
-./network.sh -m generate-peer -o c
+	cd fabric-starter
+	source ./env-org-sberbank
+	./org-generate-crypto.sh
 ```
 
-After certificates are generated each script starts a `www` docker instance to serve them to other members: the orderer
- will download the certs to create the ledger and other peers will download to use them to secure communication by TLS.  
+2.	Mts:
 
-Now the orderer can generate genesis block and channel tx files by collecting certs from members. On the orderer's host:
 ```bash
-./network.sh -m generate-orderer
+	cd fabric-starter
+	source ./env-org-mts
+	./org-generate-crypto.sh
 ```
 
-And start the orderer:
+Here the first command `source env-org-<name>` loads the environment variables into the current (terminal) session in order to subsequent 
+scripts use the necessary environment. 
+The second command `./org-generate-crypto.sh` uses the loaded environment and generates crypto material by using Hyperledger Fabric utilities 
+for current organization (which is defined by `THIS_ORG` environment variable).
+Finally this script starts a web-server (container) mapped to port 8080 which provisions the node's TLS and MSP sertificates 
+thus allowing nodes securely communicate with each other.    
+The blockchain components are not started by this script.
+
+*__Note__: It's not completely necessary to generate crypto-material for all organizations to start. 
+You may add organizations one by one. See section [Adding new organization](#adding-new-organization) then.* 
+
+After that the main org (NSD) starts the blockchain network, adds the members one by one and creates *common*, *depository* and bilateral and trilateral channels:
+
+
+3.	Nsd:  
 ```bash
-./network.sh -m up-orderer
+	cd nsd-commercial-paper
+	source ./env-org-nsd
+	./main-start-node.sh
+	./main-register-new-org.sh $ORG2 $IP2
+	./main-register-new-org.sh $ORG3 $IP3
 ```
 
-When the orderer is up, each member can start services on their hosts and their peers connect to the orderer to create 
-channels. Note that in Fabric one member creates a channel and others join to it via a channel block file. 
-Thus channel _creator_ members make these block files available to _joiners_ via their `www` docker instances. 
-Also note the starting order of members is important, especially for bilateral channels connecting pairs of members, 
-for example for channel `a-b` member `a` needs to start first to create the channel and serve the block file, 
-and then `b` starts, downloads the block file and joins the channel. It's a good idea to order organizations in script
-arguments alphabetically, ex.: `ORG1=aorg ORG2=borg ORG3=corg` then the channels are named accordingly 
-`aorg-borg aorg-corg borg-corg` and it's clear who creates, who joins a bilateral channel and who needs to start first.
+*__Note__, when new organization is registered it's added to the list of existing organizations `env-external-orgs-list`. 
+This list is used to automatically create tri-lateral channels with the new organization which is being added.   
+This list may be adjusted manually in the file to control trilateral channels creation.*
 
-Each member starts:
+If you are going to modify\adjust the list of existing organizations make sure you created a backup copy of the file 
+while all organizations are still in list. This file is also used during the smart-contract version upgrade process and this process 
+should preferably be perfromed for all organizations, so smart-contract for all bi-lateral and tri-lateral channels are upgraded.
+In the other case the rest smart-contracts will have to be upgraded manually, which might be time-consuming process.       
+
+The first script `./main-start-org.sh` does several things. It's intended to be run ob a main node so it generates crypto material 
+for the main organization as well as for the orderer. Then starts orderer and the main organization's blockchain components.
+It also creates the `common`, and `depository` channels and installs\instantiates the `security` and `book` chaincodes correspondingly. 
+
+The subsequent two scripts register new organizations in the blockchain, create bilateral channels `nsd-<org>` 
+and install\instantiate the `position` chaincode there.  
+
+As it was mentioned the list of registered organizations is also adjusted. 
+It's stored in file `env-external-orgs-list` and new organizations are automatically added to the list by this script. 
+If the list contains one or more organizations (except `nsd`) 
+the tri-lateral channels with newly registered organization will be automatically created.
+
+*__Note__: Before register new org adjust the file `instruction_init.json` and add requisites of new org there*
+
+On next step the members start the network on their nodes:
+  
+4.	Sberbank:  
+	`./org-start-node.sh`
+
+5.	Mts (after Sberbank's run is finished):  
+	`./org-start-node.sh`
+
+
+The `./org-start-node.sh` script is intended to be ran on member organizations nodes; 
+it starts blockchain components (again based on the environment loaded on the previous steps) and join the organization 
+to the `common` channel as well as bilateral channel with nsd `nsd-<this_org>`   
+
+Now newly started members need to join each other:
+
+6.	Sberbank:  
+	`./org-join-org.sh $ORG3 $IP3`
+
+7.	Mts (after Sberbank's joining is finished):  
+	`./ org-join-org.sh $ORG2 $IP2`
+
+This script join an organization to another organization which parameters (name and IP address) are specified. 
+then it joins the org to the tri-lateral channel with the `nsd` and the specified org. 
+Finally it adds the ip address and network configuration information to the connectivity components     
+
+
+# Adding new organization
+
+To add new organization into the network the following steps need to performed:  
+
+1) Download NSD Commercial source package(s) to new org's server. See prerequisites section.
+
+2) Environment file is created on new org with environment variables adjusted:  
+    edit `env-org-<neworgname>`:
+    ```
+    ...  
+    THIS_ORG=neworgname
+    ```
+
+3) New organization generates crypto-material:  
+    New org:  
+    `source ./env-org-<neworgname>`  
+    `./org-generate-crypto.sh`
+
+4) On NSD server configure the initialization configuration for *instruction* chaincode:  
+    edit `instruction_init.json` (add new organization account information)
+    
+5) Register new organization in blockchain. *Note* bi-lateral and tri-lateral 
+channels will be automatically created using the list of existing organizations (in the file `env-external-orgs-list`). 
+This list can be modified accordingly if no all tri-lateral channels need to be created. But make sure to have a backup 
+of the file with the complete list (see notes to the item 3 in the *Deployment* section).  
+
+   Nsd:  
+   `./main-register-new-org.sh neworgname <neworg_ip>`
+
+6) Start blockchain on new org:  
+    New org:  
+    `./org-start-node.sh`
+    
+7) Mutually join new org to each existing organization (except NSD) and vice-versa:  
+   - Sberbank:  
+        New org:  
+        `./org-join-org.sh sberbank <sberbank_ip>`  
+        Sberbank:
+        `./org-join-org.sh neworgname <neworg_ip>`
+    
+   - Mts:  
+        New org:  
+        `./org-join-org.sh mts <mts_ip>`  
+        Mts:
+        `./org-join-org.sh neworgname <neworg_ip>`
+
+   - Other org (if any):  
+        New org:  
+        `./org-join-org.sh <otherorg_name> <otherorg_ip>`  
+        Other Org:
+        `./org-join-org.sh neworgname <neworg_ip>`
+
+    ...  
+    Repeat for all necessary organizations
+
+
+## Upgrade smart-contracts to new versions
+
+ 
+*__Note__: When you upgrade chaincodes to new versions they have to be re-instantitated at each channel it's used. 
+List if channels is based on the organizations attached to the network. So before performing the upgrade it's highly 
+recommended to restore from a backup the file `env-external-orgs-list` with the full list of organizations.*
+
+
+Developer of blockchain (Altoros) pushes updated smart-contracts code into the repository and puts the git tag of form
+`2018_03-PRE_RELEASE_XX` where `XX` is a numbering sequence to keep a history of smart-contract which were deployed.
+
+e.g.:
 ```bash
-# organization a on their host
-./network.sh -m up-1
+git tag --force 2018_03-PRE_RELEASE_02
+git push --force origin 2018_03-PRE_RELEASE_02
+```
+Here XX equals 02.
 
-# organization b on their host
-./network.sh -m up-2
 
-# organization c on their host
-./network.sh -m up-3
+
+    After that the NSD blockchain network may be upgraded with new smart-contracts without re-deploying the whole network.  
+    To perform the upgrade network administrators select a unique label for the next version which should be identical on each 
+    organization for current upgrade. It is usually versioning numbers sequence in a form of "1.0", "2.0", "3.0", but it might be 
+    any label.
+
+
+The following step has to be done on all nodes:
+```bash
+cd nsd-commercial-paper
+./blockchain-upgrade.sh Y.Z XX
+```
+Here `Y.Z` defines the version label with which new smart-contracts will be installed. 
+(Initial network deployment installs chaincodes with version 1.0).  
+`XX` - is the tag suffix  
+ 
+For example to upgrade network with new smart-contracts tagged with `2018_03-PRE_RELEASE_02` in github repository 
+as chaincode version 2.0 the following command have to be executed:
+   
+  - NSD:  
+     `cd nsd-commercial-paper`
+     `source env-org-nsd` 
+     `./blockchain-upgrade.sh 2.0 02`
+ - Sberbank:  
+     `cd nsd-commercial-paper`
+     `source env-org-sberbank` 
+     `./blockchain-upgrade.sh 2.0 02`
+ - MTS:  
+     `cd nsd-commercial-paper`
+     `source env-org-mts` 
+     `./blockchain-upgrade.sh 2.0 02`
+
+
+## Add new organization to network after smart-contracts were upgraded
+
+The starting organization script by default set the version of chaincodes to 1.0. If the whole network 
+was already upgraded to another version new organization should be upgraded to the the corresponded version either.
+
+So after starting the organization node, and joining organization-partners the same blockchain-upgrade procedure need to be executed.
+
+
+# Backup and failure recovery  
+
+## Backup 
+In order to prevent loosing the network all organizations have to backup corresponded data on their nodes. These are:
+
+- modified smart-contracts parameters files (if any), full list of organizations `env-external-orgs-list`
+- generated artifacts such as Cryptographic Certification Authority's (CA) and Membership Service Provider's (MSP) keys and certificates
+- `www/artifacts` folder with copy of certificates
+- `dockercompose` folder with generated configuration files
+- Ledger directory
+
+Commands:  
+
+To copy artifacts and configuration:  
+  
+```bash   
+    cd nsd-commercial-paper  
+    mkdir -p backup/www
+    cp book_init.json instruction_init.json security_init.json env-external-orgs-list       backup/  
+    cp -r artifacts         backup/  
+    cp -r www/artifacts     backup/www/  
+    cp -r dockercompose     backup/  
 ```
 
-## How it works
+To backup ledgers directories:
 
-The script [network.sh](network.sh) uses substitution of values and names to create config files out of templates:
-
-- [cryptogentemplate-orderer.yaml](artifacts/cryptogentemplate-orderer.yaml) 
-and [cryptogentemplate-peer.yaml](artifacts/cryptogentemplate-peer.yaml) for `cryptogen.yaml` to drive 
-[cryptogen](https://github.com/hyperledger/fabric/tree/release/common/tools/cryptogen) tool to generate members' crypto material: 
-private keys and certificates
-- [configtxtemplate.yaml](artifacts/configtxtemplate.yaml) for `configtx.yaml` with definitions of 
-the consortium and channels to drive [configtx](https://github.com/hyperledger/fabric/tree/release/common/configtx) tool to generate 
-genesis block file to start the orderer, and channel config transaction files to create channels
-- [network-config-template.json](artifacts/network-config-template.json) for `network-config.json` file used by the 
-API server and web apps to connect to the members' peers and ca servers
-- [docker-composetemplate-orderer.yaml](ledger/docker-composetemplate-orderer.yaml) 
-and [docker-composetemplate-peer.yaml](ledger/docker-composetemplate-peer.yaml) for `docker-compose.yaml` files for 
-each member organization to start docker containers
-
-During setup the same script uses `cli` docker containers to create and join channels, install and instantiate chaincodes.
-
-And finally it starts members' services via the generated `docker-compose.yaml` files.
-
-## Customize and extend
-
-Customize domain and organization names by editing [network.sh](network.sh) file or by setting env variables. 
-Note organization names are ordered alphabetically:
-
+- NSD:
 ```bash
-export DOMAIN=myapp.com ORG1=bar ORG2=baz ORG3=foo
-```  
-
-The topology of one `common` channel open to all members and bilateral ones is an example and a starting point: 
-you can change channel members by editing [configtxtemplate.yaml](artifacts/configtxtemplate.yaml) to create wider 
-channels, groups, triplets etc.
-
-It's also relatively straightforward to extend the scripts from the preset `ORG1`, `ORG2` and `ORG3` to take an arbitrary 
-number of organizations and figure out possible permutations of bilateral channels: see `iterateChannels` function in 
-[network.sh](network.sh).
-
-## Chaincode development
-
-There are commands for working with chaincodes in `chaincode-dev` mode where a chaincode is not managed within its docker 
-container but run separately as a stand alone executable or in a debugger. The peer does not manage the chaincode but 
-connects to it to invoke and query.
-
-The dev network is composed of a minimal set of peer, orderer and cli containers and uses pre-generated artifacts
-checked into the source control. Channel and chaincodes names are `myc` and `mycc` and can be edited in `network.sh`.
-
-Start containers for dev network:
+    mkdir -p backup/ledger_nsd
+    mkdir -p backup/ledger_orderer
+    sudo cp -r /var/lib/docker/volumes/dockercompose_peer0.nsd.nsd.ru/.     backup/ledger_nsd
+    sudo cp -r /var/lib/docker/volumes/dockercompose_orderer.nsd.ru/.       backup/ledger_orderer
+```
+- Sberbank:
 ```bash
-./network.sh -m devup
-./network.sh -m devinstall
+    mkdir -p backup/ledger_sberbank  
+    sudo cp -r /var/lib/docker/volumes/dockercompose_peer0.sberbank.nsd.ru/.     backup/ledger_sberbank
+```
+- Mts:
+```bash
+    mkdir -p backup/ledger_mts  
+    sudo cp -r /var/lib/docker/volumes/dockercompose_peer0.mts.nsd.ru/.         backup/ledger_mts
 ```
 
-Start your chaincode in a debugger with env variables:
+
+## Recovery
+
+- Clean environment:  
+    - If new server is used - install environment as described in the `Install prerequisites` section  
+    - If old server is used - make sure to stop and remove old docker containers:
 ```bash
-CORE_CHAINCODE_LOGGING_LEVEL=debug
-CORE_PEER_ADDRESS=0.0.0.0:7051
-CORE_CHAINCODE_ID_NAME=mycc:0
+    network.sh -m down
+    docker rm -f $(docker ps -aq)
 ```
 
-Now you can instantiate, invoke and query your chaincode:
+
+- Copy backed up artifacts back to their original locations: 
+
 ```bash
-./network.sh -m devinstantiate
-./network.sh -m devinvoke
-./network.sh -m devquery
+    cd nsd-commercial-paper  
+    cp backup/book_init.json backup/instruction_init.json backup/security_init.json backup/env-external-orgs-list   ./ 
+    cp -r backup/artifacts          ./  
+    cp -r backup/www/artifacts      www/  
+    cp -r backup/dockercompose      ./  
 ```
 
-You'll be able to modify the source code, restart the chaincode, test with invokes without rebuilding or restarting 
-the dev network. 
+- Copy backed up ledgers back to their original locations:
+    - NSD:  
+    `sudo cp -r backup/ledger_nsd/.           /var/lib/docker/volumes/dockercompose_peer0.nsd.nsd.ru/`     
+    `sudo cp -r backup/ledger_orderer/.       /var/lib/docker/volumes/dockercompose_orderer.nsd.ru/`
 
-Finally:
-```bash
-./network.sh -m devdown
+    - Sberbank:   
+    `sudo mkdir -p /var/lib/docker/volumes/dockercompose_peer0.sberbank.nsd.ru`  
+    `sudo cp -r backup/ledger_sberbank/.      /var/lib/docker/volumes/dockercompose_peer0.sberbank.nsd.ru/`  
+
+    - Mts:
+    `sudo mkdir -p /var/lib/docker/volumes/dockercompose_peer0.mts.nsd.ru`  
+    `sudo cp -r backup/ledger_mts/.           /var/lib/docker/volumes/dockercompose_peer0.mts.nsd.ru/`
+
+
+- Start nodes:
+
+   - NSD:  
+        `source env-org-nsd`  
+        `network.sh -m up-orderer`  
+        `network.sh -m up-one-org -o $THIS_ORG -M $THIS_ORG`  
+        
+   - Sberbank:  
+        `source env-org-sberbank`   
+        `./org-start-node`  
+   
+   - Mts:  
+         `source env-org-mts`  
+        `./org-start-node`  
+
+- Re-join to channels:
+   - NSD:  
+        ` network.sh -m  join-channel $THIS_ORG $MAIN_ORG common`  
+        ` network.sh -m  join-channel $THIS_ORG $MAIN_ORG depository`
+          
+   - Sberbank:  
+        `./org-join-org.sh $ORG3 $IP3`  
+   
+   - Mts:  
+        `./org-join-org.sh $ORG2 $IP2`  
+        
+        
+- Install latest version of smart-contracts on all three nodes (if they were upgraded):
+
+    `./blockchain-upgrade.sh 2.0 02`  
+    
+The parameters for script should be set according to the [Upgrade smart-contracts to new versions](#upgrade-smart-contracts-to-new-versions) section 
+
+# Update Fabric version from 1.1 to 1.2
+
+## Stop node working
+
+In the bash command shell at the root of the project (nsd-commercial-paper), execute next commands:
+  
+```bash   
+	./network.sh -m down
+	./network.sh -m clean
 ```
 
-## Acknowledgements
+## Enclose new patterns to generate
 
-This environment uses a very helpful [fabric-rest](https://github.com/Altoros/fabric-rest) API server developed separately and 
-instantiated from its docker image.
+In the bash command shell at the root of the project (nsd-commercial-paper), execute next commands:
 
-The scripts are inspired by [first-network](https://github.com/hyperledger/fabric-samples/tree/release/first-network) and 
- [balance-transfer](https://github.com/hyperledger/fabric-samples/tree/release/balance-transfer) of Hyperledger Fabric samples.
+```bash   
+	mkdir temp
+	cd temp
+	git clone https://github.com/noilpa/fabric-starter-1.2.git
+	cd ..
+	cp -rf temp/fabric-starter-1.2/docker-compose-templates/* ledger
+	# cp -rf temp/fabric-starter-1.2/artifact-templates/* artifacts
+	rm -rf temp
+```
+
+## Start node
+
+In the bash command shell at the root of the project (nsd-commercial-paper), execute next commands:
+
+NAME - the name of the node of the network member being updated - the name of the node, for example, sberbank or mts
+
+```bash   
+	./network.sh -m generate-peer -o NAME
+	./network.sh -m up -o NAME
+```
+
+## Check containers working
+
+In the bash command shell at the root of the project (nsd-commercial-paper), execute next commands:
+
+```bash   
+	docker ps -a | grep NAME
+```
