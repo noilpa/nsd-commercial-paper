@@ -34,7 +34,7 @@ sudo docker pull hyperledger/fabric-tools:${FABRIC_PACK}
 echo "Pull hyperledger/fabric-baseos"
 sudo docker pull hyperledger/fabric-baseos:x86_64-0.4.6
 echo "Pull hyperledger/fabric-rest"
-sudo docker pull maxxx1313/fabric-rest
+sudo docker pull olegabu/fabric-starter-rest
 echo "Pull nginx"
 sudo docker pull nginx
 echo "Pull node:6-alpine"
