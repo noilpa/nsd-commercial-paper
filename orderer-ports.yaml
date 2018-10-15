@@ -1,0 +1,10 @@
+#
+# Copyright . All Rights Reserved.
+#
+
+version: '3.7'
+
+services:
+  orderer:
+    ports:
+      - 7050:7050
